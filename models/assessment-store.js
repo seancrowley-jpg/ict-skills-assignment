@@ -22,5 +22,5 @@ const assessment2 = {
   trend: "true"
 }
 
-const summary = [assessment1, assessment2]
+const assessments = [assessment1, assessment2];
 module.exports = assessments;

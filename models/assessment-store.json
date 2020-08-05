@@ -1,0 +1,13 @@
+{
+  "assessments": [
+    {
+      weight: "70",
+      chest: "30",
+      thigh: "40",
+      upperarm: "20",
+      waist: "50",
+      hips: "40",
+      trend: "false"
+    }
+  ]
+}

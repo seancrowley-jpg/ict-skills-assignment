@@ -11,28 +11,30 @@
     </tr>
   </thead>
   <tbody>
+    {{#each assessment}}
       <tr>
         <td>
-          {{assessment.weight}}
+          {{weight}}
         </td>
         <td>
-          {{assessment.chest}}
+          {{chest}}
         </td>
         <td>
-          {{assessment.thigh}}
+          {{thigh}}
         </td>
         <td>
-          {{assessment.upperarm}}
+          {{upperarm}}
         </td>
         <td>
-          {{assessment.waist}}
+          {{waist}}
         </td>
         <td>
-          {{assessment.hips}}
+          {{hips}}
         </td>
         <td>
-          {{assessment.trend}}
+          {{trend}}
         </td>
       </tr>
+    {{/each}}
   </tbody>
 </table>
