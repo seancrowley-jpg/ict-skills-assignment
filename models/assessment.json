@@ -5,9 +5,9 @@
       "chest" : "30",
       "thigh" : "32",
       "upperarm" : "20",
-      "waist" : "",
-      "hips" : "",
-      "trend" : ""
+      "waist" : "30",
+      "hips" : "30",
+      "trend" : "true"
     }
   ]
 }
