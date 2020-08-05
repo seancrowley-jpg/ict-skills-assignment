@@ -1,15 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const assessments = {
-  weight: "70",
-  chest: "30",
-  thigh: "40",
-  upperarm: "20",
-  waist: "50",
-  hips: "40",
-  trend: "false"
-}
+const assessments = require("../models/assessment-store.js")
 
 const dashboard = {
   index(request, response) {
@@ -18,6 +10,7 @@ const dashboard = {
       title: "Dashboard",
       assessment: assessments
     };
+    logger.info('about to render', assessments)
     response.render("dashboard", viewData);
   },
 };
