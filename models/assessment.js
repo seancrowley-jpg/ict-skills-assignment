@@ -2,6 +2,6 @@
 
 const logger = require('../utils/logger');
 
-const assessments = require('./models/assessment.json').assessments;
+const assessment = require('./models/assessment.json').assessments;
 
-module.export = assessments;
+module.export = assessment;
