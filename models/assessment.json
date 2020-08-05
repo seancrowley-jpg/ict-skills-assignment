@@ -3,8 +3,11 @@
     {
       "weight" : "80",
       "chest" : "30",
-      "thigh" : "0" ,
-      
+      "thigh" : "32",
+      "upperarm" : "20",
+      "waist" : "",
+      "hips" : "",
+      "trend" : ""
     }
   ]
 }
