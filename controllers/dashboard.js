@@ -2,7 +2,7 @@
 
 const logger = require("../utils/logger");
 const assessments = require("../models/assessment-store.js")
-const members = require("../modles/member-store.js")
+const members = require("../models/member-store.js")
 
 const dashboard = {
   index(request, response) {
@@ -16,5 +16,12 @@ const dashboard = {
     response.render("dashboard", viewData);
   },
 };
+
+const addAssessment = {
+  index(request,response) {
+    logger.info("adding assessment");
+    const
+  }
+}
 
 module.exports = dashboard;
