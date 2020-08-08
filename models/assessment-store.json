@@ -1,6 +1,7 @@
 {
   "assessments": [
     {
+      "id": "01",
       "weight": "70",
       "chest": "30",
       "thigh": "40",
@@ -10,6 +11,7 @@
       "trend": ""
     },
     {
+      "id": "02",
       "weight": "80",
       "chest": "35",
       "thigh": "45",

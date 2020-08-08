@@ -1,22 +1,26 @@
 {
   "members": [
     {
+      "id": "04",
       "email": "homer@simpson.com",
       "name": "Homer",
       "password": "secret",
       "address": "Evergreen Terrace",
       "gender": "Male",
       "height": "1.8",
-      "startingWeight": "90"
+      "startingWeight": "90",
+      "assessments": []
     },
     {
+      "id": "05",
       "email": "marge@simpson.com",
       "name": "Marge",
       "password": "secret",
       "address": "Evergreen Terrace",
       "gender": "Female",
       "height": "1.6",
-      "startingWeight": "70"
+      "startingWeight": "70",
+      "assessments": []
     }
   ]
 }
