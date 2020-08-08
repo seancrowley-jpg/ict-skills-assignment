@@ -2,4 +2,6 @@
 
 const logger = require('../utils/logger');
 
-const member
+const members = require('./member-store.json').members
+
+module.exports = members;
