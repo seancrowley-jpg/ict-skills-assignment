@@ -17,14 +17,5 @@ const dashboard = {
   },
 };
 
-const addAssessment = {
-  index(request,response) {
-    memberId = request.params.id;
-    logger.info("adding assessment");
-    const newAssessment = {
-      weight = request
-    }
-  }
-}
 
 module.exports = dashboard;
