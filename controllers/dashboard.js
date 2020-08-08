@@ -5,7 +5,7 @@ const assessments = require("../models/assessment-store.js")
 
 const dashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
+    logger.info("Dashboard Rendering");
     const viewData = {
       title: "Dashboard",
       assessment: assessments
