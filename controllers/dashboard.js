@@ -15,6 +15,14 @@ const dashboard = {
     logger.info('about to render', assessments)
     response.render("dashboard", viewData);
   },
+  
+  addAssessment(request,response) {
+    const newAssessment = {
+      id: uuid(),
+      weight: request.body.weight,
+      chest: request.body.chest,
+    }
+  }
 };
 
 
