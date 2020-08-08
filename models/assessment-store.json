@@ -7,7 +7,7 @@
       "upperarm": "20",
       "waist": "50",
       "hips": "40",
-      "trend": "false"
+      "trend": ""
     },
     {
       "weight": "80",
@@ -16,7 +16,7 @@
       "upperarm":"30",
       "waist": "55",
       "hips": "45",
-      "trend": "true"
+      "trend": ""
     }
   ]
 }
