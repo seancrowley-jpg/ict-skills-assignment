@@ -6,6 +6,7 @@ const members = require("../models/member-store.js")
 
 const dashboard = {
   index(request, response) {
+    memberId = request.params.id;
     logger.info("dashboard rendering");
     const viewData = {
       title: "Dashboard",
