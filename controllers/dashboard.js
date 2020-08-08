@@ -6,7 +6,6 @@ const members = require("../models/member-store.js")
 
 const dashboard = {
   index(request, response) {
-    memberId = request.params.id;
     logger.info("dashboard rendering");
     const viewData = {
       title: "Dashboard",
@@ -20,8 +19,11 @@ const dashboard = {
 
 const addAssessment = {
   index(request,response) {
+    memberId = request.params.id;
     logger.info("adding assessment");
-    const
+    const newAssessment = {
+      weight = request
+    }
   }
 }
 
