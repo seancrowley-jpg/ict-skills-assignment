@@ -15,10 +15,21 @@
       "weight": "80",
       "chest": "35",
       "thigh": "45",
-      "upperarm":"30",
+      "upperarm": "30",
       "waist": "55",
       "hips": "45",
       "trend": ""
-    }
+    },
+    {
+      "id": "03",
+      "weight": "88",
+      "chest": "37",
+      "thigh": "42",
+      "upperarm": "28",
+      "waist": "55",
+      "hips": "45",
+      "trend": ""
+    },
+    null
   ]
 }

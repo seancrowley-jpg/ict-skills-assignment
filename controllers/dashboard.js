@@ -1,7 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const assessments = require("../models/assessment-store.js")
+const assessmentStore = require("../models/assessment-store.js")
 const members = require("../models/member-store.js")
 const uuid = require("uuid");
 
@@ -10,10 +10,10 @@ const dashboard = {
     logger.info("dashboard rendering");
     const viewData = {
       title: "Dashboard",
-      assessment: assessments,
+      assessment: assessmentStore.getAllAssessments(),
       member: members
     };
-    logger.info('about to render', assessments)
+    logger.info('about to render')
     response.render("dashboard", viewData);
   },
   
@@ -27,8 +27,8 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
     };
-    
-    assessment-store.addAssessment
+
+    assessmentStore.addAssessment();
   }
 };
 

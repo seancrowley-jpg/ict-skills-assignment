@@ -6,42 +6,29 @@ const assessmentStore = {
   store: new JsonStore('./models/assessment-store.json', { assessments: [] }),
   collection: 'assessments',
 
-  getAllPlaylists() {
+  getAllAssessments() {
     return this.store.findAll(this.collection);
   },
 
-  getPlaylist(id) {
+  getAssessment(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  addPlaylist(playlist) {
-    this.store.add(this.collection, playlist);
+  addAssessment(assessment) {
+    this.store.add(this.collection, assessment);
     this.store.save();
   },
 
-  removePlaylist(id) {
-    const playlist = this.getPlaylist(id);
-    this.store.remove(this.collection, playlist);
+  removeAssessment(id) {
+    const assessment = this.getAssessment(id);
+    this.store.remove(this.collection, assessment);
     this.store.save();
   },
 
-  removeAllPlaylists() {
+  removeAllAssessments() {
     this.store.removeAll(this.collection);
     this.store.save();
-  },
+  }
+}
 
-  addSong(id, song) {
-    const playlist = this.getPlaylist(id);
-    playlist.songs.push(song);
-    this.store.save();
-  },
-
-  removeSong(id, songId) {
-    const playlist = this.getPlaylist(id);
-    const songs = playlist.songs;
-    _.remove(songs, { id: songId});
-    this.store.save();
-  },
-};
-
-module.exports = playlistStore;
+module.exports = assessmentStore;
