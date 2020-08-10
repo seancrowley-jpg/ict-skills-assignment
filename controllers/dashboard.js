@@ -28,7 +28,7 @@ const dashboard = {
       hips: request.body.hips,
     };
 
-    assessmentStore.addAssessment();
+    assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   }
 };
