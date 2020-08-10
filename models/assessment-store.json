@@ -1,36 +1,13 @@
 {
   "assessments": [
     {
-      "id": "01",
-      "weight": "70",
+      "weight": "80",
       "chest": "30",
       "thigh": "40",
-      "upperarm": "20",
-      "waist": "50",
-      "hips": "40",
-      "trend": ""
+      "upperarm": "25",
+      "waist": "45",
+      "hips": "46"
     },
-    {
-      "id": "02",
-      "weight": "80",
-      "chest": "35",
-      "thigh": "45",
-      "upperarm": "30",
-      "waist": "55",
-      "hips": "45",
-      "trend": ""
-    },
-    {
-      "id": "03",
-      "weight": "88",
-      "chest": "37",
-      "thigh": "42",
-      "upperarm": "28",
-      "waist": "55",
-      "hips": "45",
-      "trend": ""
-    },
-    null,
     null
   ]
 }
