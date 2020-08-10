@@ -30,6 +30,13 @@ const dashboard = {
 
     assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
+  },
+  
+  deleteAssessment(request,response)
+  {
+    const assessmentId = request.params.id;
+    assessmentStore.deleteAssessment(assessmentId);
+    response.redirect("/dashboard");
   }
 };
 

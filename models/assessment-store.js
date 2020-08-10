@@ -19,13 +19,13 @@ const assessmentStore = {
     this.store.save();
   },
 
-  removeAssessment(id) {
+  deleteAssessment(id) {
     const assessment = this.getAssessment(id);
     this.store.remove(this.collection, assessment);
     this.store.save();
   },
 
-  removeAllAssessments() {
+  deleteAllAssessments() {
     this.store.removeAll(this.collection);
     this.store.save();
   }
