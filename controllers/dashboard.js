@@ -29,6 +29,7 @@ const dashboard = {
     };
 
     assessmentStore.addAssessment();
+    response.redirect("/dashboard");
   }
 };
 
