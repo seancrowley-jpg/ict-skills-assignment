@@ -19,7 +19,7 @@ const dashboard = {
   
   addAssessment(request,response) {
     const newAssessment = {
-      id: uuid(),
+      id: uuid.v1(),
       weight: request.body.weight,
       chest: request.body.chest,
       thigh: request.body.thigh,
