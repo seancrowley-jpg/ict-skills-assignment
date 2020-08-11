@@ -2,7 +2,7 @@
 
 const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store.js")
-const members = require("../models/member-store.js")
+const memberStore = require("../models/member-store.js")
 const uuid = require("uuid");
 
 const dashboard = {
@@ -11,7 +11,7 @@ const dashboard = {
     const viewData = {
       title: "Dashboard",
       assessment: assessmentStore.getAllAssessments(),
-      member: members
+      member: memberStore.getAllMembers()
     };
     logger.info('about to render')
     response.render("dashboard", viewData);
