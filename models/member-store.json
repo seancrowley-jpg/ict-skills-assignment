@@ -1,4 +1,13 @@
 {
   "members": [
+    {
+      "email": homer@simpson.com,
+      "password": secret
+      name: Homer Simpson
+      address: Springfield, Mass
+      gender: Male
+      height: 1.7
+      startingweight: 101
+    }
   ]
 }
