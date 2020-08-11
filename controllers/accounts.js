@@ -53,7 +53,7 @@ const accounts = {
 
   getCurrentUser(request) {
     const userEmail = request.cookies.member;
-    return memberstore.getUserByEmail(userEmail);
+    return memberstore.getMemberByEmail(userEmail);
   },
 };
 
