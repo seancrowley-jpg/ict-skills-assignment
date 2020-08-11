@@ -1,13 +1,23 @@
 {
   "members": [
     {
-      "email": homer@simpson.com,
-      "password": secret
-      name: Homer Simpson
-      address: Springfield, Mass
-      gender: Male
-      height: 1.7
-      startingweight: 101
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "name": "Homer Simpson",
+      "address": "Springfield", 
+      "gender": "Male",
+      "height": "1.7",
+      "startingweight": "101",
+      "assessments": [
+        {
+          "weight": "100",
+          "chest": "50",
+          "thigh": "12",
+          "upperarm": "25",
+          "waist": "45",
+          "hips": "50"
+        }
+      ]
     }
   ]
 }

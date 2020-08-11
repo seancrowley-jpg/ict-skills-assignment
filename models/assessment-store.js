@@ -23,11 +23,6 @@ const assessmentStore = {
     const assessment = this.getAssessment(id);
     this.store.remove(this.collection, assessment);
     this.store.save();
-  },
-
-  deleteAllAssessments() {
-    this.store.removeAll(this.collection);
-    this.store.save();
   }
 }
 
