@@ -8,6 +8,26 @@
       "upperarm": "25",
       "waist": "45",
       "hips": "58"
+    },
+    {
+      "id": "a06969e0-dbe8-11ea-8f43-c7132f8d9640",
+      "userid": "01",
+      "weight": "80",
+      "chest": "35",
+      "thigh": "40",
+      "upperarm": "25",
+      "waist": "45",
+      "hips": "46"
+    },
+    {
+      "id": "be24f490-dbe8-11ea-8f43-c7132f8d9640",
+      "userid": "55f55050-dbe7-11ea-bd97-41de0c7044e2",
+      "weight": "55",
+      "chest": "20",
+      "thigh": "35",
+      "upperarm": "15",
+      "waist": "30",
+      "hips": "32"
     }
   ]
 }

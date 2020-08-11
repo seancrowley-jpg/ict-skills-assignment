@@ -52,7 +52,7 @@ const accounts = {
   },
 
   getCurrentUser(request) {
-    const userEmail = request.cookies.member;
+    const userEmail = request.cookies.assessment;
     return memberstore.getMemberByEmail(userEmail);
   },
 };
