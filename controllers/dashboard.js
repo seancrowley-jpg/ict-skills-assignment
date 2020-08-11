@@ -1,17 +1,19 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const assessmentStore = require("../models/assessment-store.js")
+const accounts = require ('./accounts.js');
 const memberStore = require("../models/member-store.js")
+const assessmentStore = require("../models/assessment-store.js")
 const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Dashboard",
-      assessment: assessmentStore.getAllAssessments(),
-      member: memberStore.getAllMembers()
+      assessment: assessmentStore.getMembersAssessments(loggedInUser),
+      member: accounts.getCurrentUser()
     };
     logger.info('about to render')
     response.render("dashboard", viewData);

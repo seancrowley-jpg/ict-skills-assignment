@@ -52,8 +52,8 @@ const accounts = {
   },
 
   getCurrentUser(request) {
-    const userEmail = request.cookies.playlist;
-    return memberstore.getUserByEmail(userEmail);
+    const userEmail = request.cookies.member;
+    return memberstore.getMemberByEmail(userEmail);
   },
 };
 

@@ -9,6 +9,16 @@
       "gender": "Male",
       "height": "1.8",
       "startingWeight": "90"
+    },
+    {
+      "name": "Marge",
+      "gender": "Female",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "Evergreen Terrace",
+      "height": "1.5",
+      "startingweight": "70",
+      "id": "b45fa090-dbde-11ea-9259-29d6c54753d7"
     }
   ]
 }
