@@ -11,7 +11,7 @@ const memberStore = {
     return this.store.findAll(this.collection);
   },
 
-  getMembers(id) {
+  getMember(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
@@ -21,7 +21,7 @@ const memberStore = {
   },
 
   deleteMember(id) {
-    const member = this.getAssessment(id);
+    const member = this.getMember(id);
     this.store.remove(this.collection, member);
     this.store.save();
   },
