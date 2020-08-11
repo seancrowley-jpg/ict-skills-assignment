@@ -1,13 +1,4 @@
 {
   "assessments": [
-    {
-      "id": "6ac1cd50-dbde-11ea-9259-29d6c54753d7",
-      "weight": "80",
-      "chest": "45",
-      "thigh": "40",
-      "upperarm": "25",
-      "waist": "45",
-      "hips": "50"
-    }
   ]
 }

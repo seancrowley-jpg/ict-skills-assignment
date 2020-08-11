@@ -25,9 +25,10 @@ const memberStore = {
     this.store.remove(this.collection, member);
     this.store.save();
   },
-  
-  getMemberByEmail(email) {
-    return this.store.findOneBy(this.collection, { email: email });
+
+  deleteAllMembers() {
+    this.store.removeAll(this.collection);
+    this.store.save();
   }
 }
 
