@@ -1,13 +1,4 @@
 {
   "assessments": [
-    {
-      "id": "01",
-      "weight": "80",
-      "chest": "30",
-      "thigh": "40",
-      "upperarm": "25",
-      "waist": "45",
-      "hips": "46"
-    }
   ]
 }

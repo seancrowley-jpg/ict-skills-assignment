@@ -1,14 +1,4 @@
 {
   "members": [
-    {
-      "id": "04",
-      "email": "homer@simpson.com",
-      "name": "Homer",
-      "password": "secret",
-      "address": "Evergreen Terrace",
-      "gender": "Male",
-      "height": "1.8",
-      "startingWeight": "90"
-    }
   ]
 }
