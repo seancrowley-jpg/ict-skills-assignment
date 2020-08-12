@@ -18,6 +18,10 @@ const memberStore = {
   getMemberByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
   },
+  
+  getMemberByPassword(password) {
+    return this.store.findOneBy(this.collection, { password: password });
+  },
 
   addMember(member) {
     this.store.add(this.collection, member);

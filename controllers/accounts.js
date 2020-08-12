@@ -42,7 +42,8 @@ const accounts = {
 
   authenticate(request, response) {
     const member = memberstore.getMemberByEmail(request.body.email);
-    if (member) {
+    const password = memberstore.getMemberByPassword(request.body.password);
+    if (member && password) {
       response.cookie('assessment', member.email);
       logger.info(`logging in ${member.email}`);
       response.redirect('/dashboard');
