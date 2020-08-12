@@ -7,7 +7,7 @@ const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
+    logger.info("Dashboard Rendering");
     const viewData = {
       title: "Dashboard",
       assessment: assessmentStore.getAllAssessments(),
