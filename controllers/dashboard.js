@@ -8,12 +8,20 @@ const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
+<<<<<<< HEAD
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Dashboard",
       assessment: assessmentStore.getUserAssessments(loggedInUser.id),
       member: loggedInUser
+=======
+    logger.info("Dashboard Rendering");
+    const viewData = {
+      title: "Dashboard",
+      assessment: assessmentStore.getAllAssessments(),
+      member: memberStore.getAllMembers()
+>>>>>>> 9e628b977f0ecc84d7fcede57d775626c3ab1d50
     };
     logger.info('about to render')
     response.render("dashboard", viewData);
