@@ -11,7 +11,7 @@ const trainerdashboard = {
     logger.info("Trainer Dashboard rendering");
     const memberId = request.params.id;
     const members = memberStore.getAllMembers();
-    const assessments = assessmentStore.getUsersTotalAssessments(memberId);
+    const assessments = assessmentStore.getUserAssessments(memberId);
     const viewData = {
       member: members,
       assessment: assessments
