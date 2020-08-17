@@ -37,6 +37,7 @@ const dashboard = {
   {
     const loggedInUser = accounts.getCurrentUser(request);
     const assessmentId = request.params.assessmentId;
+    memberStore.deleteAssessment(loggedInUser.id,assessmentId)
     response.redirect("/dashboard");
   }
 };
