@@ -24,25 +24,13 @@
     },
     {
       "name": "Marge",
-      "gender": "Female",
+      "gender": "F",
       "email": "marge@simpson.com",
       "password": "secret",
       "address": "Evergreen Terrace",
       "height": "1.5",
-      "startingweight": "65",
-      "id": "55f55050-dbe7-11ea-bd97-41de0c7044e2",
-      "assessments": [
-        {
-          "assessmentid": "be24f490-dbe8-11ea-8f43-c7132f8d9640",
-          "userid": "55f55050-dbe7-11ea-bd97-41de0c7044e2",
-          "weight": "55",
-          "chest": "20",
-          "thigh": "35",
-          "upperarm": "15",
-          "waist": "30",
-          "hips": "32"
-        }
-      ]
+      "startingweight": "60",
+      "userId": "dd7195a0-e0c1-11ea-8213-d92573e23077"
     }
   ]
 }

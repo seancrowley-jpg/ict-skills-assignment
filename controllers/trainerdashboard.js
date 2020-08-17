@@ -19,7 +19,7 @@ const trainerdashboard = {
   trainerAssessment(request, response) {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
-    const member = memberStore.getMemberById(memberId);
+    const member = memberStore.getMember(memberId);
     const viewData = {
       member: member,
     }

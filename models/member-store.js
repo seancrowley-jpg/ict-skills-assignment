@@ -29,7 +29,7 @@ const memberStore = {
   },
 
   deleteMember(id) {
-    const member = this.getMemberById(id);
+    const member = this.getMember(id);
     this.store.remove(this.collection, member);
     this.store.save();
   },
