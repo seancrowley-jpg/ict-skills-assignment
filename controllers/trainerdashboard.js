@@ -10,6 +10,12 @@ const trainerdashboard = {
   index (request, response) {
     logger.info("Trainer Dashboard rendering");
     const members = memberStore.getAllMembers();
-    const view
+    const viewData = {
+      member: members
+    };
+    logger.info("about to render");
+    response.render("trainerdashboard", viewData)
   }
-}
+};
+
+module.exports = trainerdashboard;
