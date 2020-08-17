@@ -10,6 +10,7 @@ const trainerdashboard = {
   index (request, response) {
     logger.info("Trainer Dashboard rendering");
     const members = memberStore.getAllMembers();
+    const assessments = assessmentStore.getUsersTotalAssessments();
     const viewData = {
       member: members
     };
