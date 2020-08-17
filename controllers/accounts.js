@@ -52,7 +52,7 @@ const accounts = {
       response.redirect('/dashboard');
     } 
     else if(trainer && tPassword) {
-      response.redirect('.trainerdashboard');
+      response.redirect('/trainerdashboard');
     }
     else {
       response.redirect('/login');
