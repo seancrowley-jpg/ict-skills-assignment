@@ -26,6 +26,12 @@ const trainerdashboard = {
       assessment: assessmentStore.getUserAssessments(member.id)
     }
     logger.info("about to render")
+    response.render("trainerassessment", viewData)
+  },
+  
+  deleteMember(request, response) {
+    logger.info("Deleteing Member")
+    const m
   }
 };
 
