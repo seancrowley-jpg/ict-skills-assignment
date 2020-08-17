@@ -29,13 +29,14 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
     };
-    memberStore.addAssessment(loggedInUser,newAssessment);
+    memberStore.addAssessment(loggedInUser.id,newAssessment);
     response.redirect("/dashboard");
   },
   
   deleteAssessment(request,response)
   {
-    const assessmentId = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
+    const assessmentId = request.params.assessmentId;
     response.redirect("/dashboard");
   }
 };

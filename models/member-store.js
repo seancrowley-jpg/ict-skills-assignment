@@ -48,19 +48,6 @@ const memberStore = {
     this.store.save();
   },
   
-  addSong(id, song) {
-    const playlist = this.getPlaylist(id);
-    playlist.songs.push(song);
-
-    let duration = 0;
-    for (let i = 0; i < playlist.songs.length; i++) {
-      duration += playlist.songs[i].duration;
-    }
-
-    playlist.duration = duration;
-    this.store.save();
-  },
-
   deleteAssessment(id, assessmentId) {
     const member = this.getMemberById(id);
     const assessments = member.assessments;
