@@ -9,10 +9,12 @@ const uuid = require("uuid");
 const trainerdashboard = {
   index (request, response) {
     logger.info("Trainer Dashboard rendering");
+    const memberId = request.params.id;
     const members = memberStore.getAllMembers();
-    const assessments = assessmentStore.getUsersTotalAssessments();
+    const assessments = assessmentStore.getUsersTotalAssessments(memberId);
     const viewData = {
-      member: members
+      member: members,
+      assessment: assessments
     };
     logger.info("about to render");
     response.render("trainerdashboard", viewData)

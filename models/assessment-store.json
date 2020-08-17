@@ -2,6 +2,7 @@
   "assessments": [
     {
       "id": "e78e5fd0-dbe6-11ea-b7b1-2345ac643b25",
+      "userid": "01",
       "weight": "80",
       "chest": "35",
       "thigh": "40",
@@ -28,15 +29,6 @@
       "upperarm": "15",
       "waist": "30",
       "hips": "32"
-    },
-    {
-      "id": "77ed7410-e099-11ea-bae5-53d04f8b9ca0",
-      "weight": "80",
-      "chest": "35",
-      "thigh": "40",
-      "upperarm": "25",
-      "waist": "45",
-      "hips": "45"
     }
   ]
 }
