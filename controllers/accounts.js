@@ -35,7 +35,7 @@ const accounts = {
 
   register(request, response) {
     const member = request.body;
-    member.id = uuid.v1();
+    member.userId = uuid.v1();
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);
     response.redirect('/');
