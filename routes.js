@@ -18,6 +18,8 @@ router.get("/dashboard", dashboard.index);
 router.post("/dashboard/addassessment", dashboard.addAssessment);
 router.get("/dashboard/deleteassessment/:id", dashboard.deleteAssessment);
 
+//router.get("/trainerdashboard", tr)
+
 router.get("/about", about.index);
 
 
