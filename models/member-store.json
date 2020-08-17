@@ -39,6 +39,16 @@
           "upperarm": "99",
           "waist": "99",
           "hips": "99"
+        },
+        {
+          "assessmentId": "82426aa0-e0b3-11ea-8a04-7327cfa2eb2a",
+          "userid": "01",
+          "weight": "8",
+          "chest": "8",
+          "thigh": "8",
+          "upperarm": "8",
+          "waist": "8",
+          "hips": "8"
         }
       ]
     },
