@@ -50,8 +50,7 @@ const memberStore = {
   
   deleteAssessment(id,assessmentId) {
     const member = this.getMemberById(id);
-    const assessments = member.assessments;
-    _.remove(assessments, { Id: assessmentId });
+    _.remove(member.assessments, { id: assessmentId });
     this.store.save();
   }
 };
