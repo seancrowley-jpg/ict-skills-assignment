@@ -15,7 +15,19 @@ const trainerdashboard = {
     };
     logger.info("about to render");
     response.render("trainerdashboard", viewData)
+  },
+  
+  trainerAssessment(request, response) {
+    logger.info("Rendering members assessments");
+    const memberId = request.params.id;
+    const member = memberStore.getMemberById(memberId);
+    const viewData = {
+      member: member,
+      assessment: assessmentStore.getUserAssessments(member.id)
+    }
+    logger.info("about to render")
   }
 };
+
 
 module.exports = trainerdashboard;
