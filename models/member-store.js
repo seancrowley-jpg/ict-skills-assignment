@@ -34,10 +34,6 @@ const memberStore = {
     this.store.save();
   },
   
-    getAllAssessments() {
-    return this.store.findAll(this.collection);
-  },
-
   getAssessment(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
@@ -47,6 +43,7 @@ const memberStore = {
   },
   
   addAssessment(assessment) {
+    
     this.store.add(this.collection, assessment);
     this.store.save();
   },

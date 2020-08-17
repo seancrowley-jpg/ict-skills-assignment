@@ -2,7 +2,6 @@
 
 const logger = require("../utils/logger");
 const accounts = require ('./accounts.js');
-const assessmentStore = require("../models/assessment-store.js")
 const memberStore = require("../models/member-store.js")
 const uuid = require("uuid");
 
@@ -12,7 +11,6 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Dashboard",
-      assessment: assessmentStore.getUserAssessments(loggedInUser.id),
       member: loggedInUser
     };
     logger.info('about to render')
@@ -31,14 +29,13 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
     };
-    assessmentStore.addAssessment(newAssessment);
+    memberStore.assessments.push(newAssessment);
     response.redirect("/dashboard");
   },
   
   deleteAssessment(request,response)
   {
     const assessmentId = request.params.id;
-    assessmentStore.deleteAssessment(assessmentId);
     response.redirect("/dashboard");
   }
 };

@@ -2,7 +2,6 @@
 
 const logger = require("../utils/logger");
 const accounts = require ('./accounts.js');
-const assessmentStore = require("../models/assessment-store.js")
 const memberStore = require("../models/member-store.js")
 const uuid = require("uuid");
 
@@ -10,10 +9,8 @@ const trainerdashboard = {
   index (request, response) {
     logger.info("Trainer Dashboard rendering");
     const members = memberStore.getAllMembers();
-    const assessments = assessmentStore.getUserAssessments(members.id);
     const viewData = {
       member: members,
-      assessment: assessments
     };
     logger.info("about to render");
     response.render("trainerdashboard", viewData)
@@ -25,7 +22,6 @@ const trainerdashboard = {
     const member = memberStore.getMemberById(memberId);
     const viewData = {
       member: member,
-      assessment: assessmentStore.getUserAssessments(member.id)
     }
     logger.info("about to render")
     response.render("trainerassessment", viewData)
