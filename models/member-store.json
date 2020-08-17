@@ -11,7 +11,7 @@
       "id": "01",
       "assessments": [
         {
-          "id": "e78e5fd0-dbe6-11ea-b7b1-2345ac643b25",
+          "assessmentId": "e78e5fd0-dbe6-11ea-b7b1-2345ac643b25",
           "userid": "01",
           "weight": "80",
           "chest": "35",
@@ -21,7 +21,7 @@
           "hips": "58"
         },
         {
-          "id": "a06969e0-dbe8-11ea-8f43-c7132f8d9640",
+          "assessmentId": "a06969e0-dbe8-11ea-8f43-c7132f8d9640",
           "userid": "01",
           "weight": "80",
           "chest": "35",
@@ -43,7 +43,7 @@
       "id": "55f55050-dbe7-11ea-bd97-41de0c7044e2",
       "assessments": [
         {
-          "id": "be24f490-dbe8-11ea-8f43-c7132f8d9640",      
+          "assessmentId": "be24f490-dbe8-11ea-8f43-c7132f8d9640",      
           "userid": "55f55050-dbe7-11ea-bd97-41de0c7044e2",      
           "weight": "55",     
           "chest": "20",      

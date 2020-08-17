@@ -42,15 +42,16 @@ const memberStore = {
     return this.store.findBy(this.collection, { userid: userid });
   },
   
-  addAssessment(assessment) {
-    
-    this.store.add(this.collection, assessment);
+  addAssessment(id,assessment) {
+    const member = this.getMember(id);
+    member.assessments.push(assessment);
     this.store.save();
   },
 
-  deleteAssessment(id) {
-    const assessment = this.getAssessment(id);
-    this.store.remove(this.collection, assessment);
+  deleteAssessment(id, assessmentId) {
+    const member = this.getMemberById(id);
+    const assessments = member.assessments;
+    _.remove(assessments, { id: assessmentId });
     this.store.save();
   }
 };
