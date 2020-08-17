@@ -9,7 +9,28 @@
       "height": "1.7",
       "startingweight": "101",
       "id": "01",
-      "assessments": []
+      "assessments": [
+        {
+          "id": "e78e5fd0-dbe6-11ea-b7b1-2345ac643b25",
+          "userid": "01",
+          "weight": "80",
+          "chest": "35",
+          "thigh": "40",
+          "upperarm": "25",
+          "waist": "45",
+          "hips": "58"
+        },
+        {
+          "id": "a06969e0-dbe8-11ea-8f43-c7132f8d9640",
+          "userid": "01",
+          "weight": "80",
+          "chest": "35",
+          "thigh": "40",
+          "upperarm": "25",
+          "waist": "45",
+          "hips": "46"
+        }
+      ]
     },
     {
       "name": "Marge",
@@ -19,19 +40,8 @@
       "address": "Evergreen Terrace",
       "height": "1.5",
       "startingweight": "65",
-      "id": "55f55050-dbe7-11ea-bd97-41de0c7044e2"
-    }
-  ],
-  "assessments": [
-    {
-      "id": "95af9f60-e0a2-11ea-9a7b-237bb20c8625",
-      "userid": "01",
-      "weight": "80",
-      "chest": "45",
-      "thigh": "40",
-      "upperarm": "25",
-      "waist": "45",
-      "hips": "46"
+      "id": "55f55050-dbe7-11ea-bd97-41de0c7044e2",
+      "assessments": []
     }
   ]
 }
