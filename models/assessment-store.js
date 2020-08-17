@@ -18,10 +18,6 @@ const assessmentStore = {
     return this.store.findBy(this.collection, { userid: userid });
   },
   
-  getUsersTotalAssessments(userid) {
-    return this.store.findBy(this.collection.length, { userid: userid });
-  },
-
   addAssessment(assessment) {
     this.store.add(this.collection, assessment);
     this.store.save();
