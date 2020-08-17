@@ -31,7 +31,9 @@ const trainerdashboard = {
   
   deleteMember(request, response) {
     logger.info("Deleteing Member")
-    const m
+    const memberId = request.params.id;
+    memberStore.deleteMember(memberId);
+    response.redirect("/trainerdashboard")
   }
 };
 

@@ -21,6 +21,7 @@ router.get("/dashboard/deleteassessment/:id", dashboard.deleteAssessment);
 
 router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/trainerassessment/:id", trainerdashboard.trainerAssessment);
+router.get("/trainerdashboard/deletemember/:id", trainerdashboard.deleteMember);
 
 router.get("/about", about.index);
 
