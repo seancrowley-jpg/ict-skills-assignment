@@ -42,9 +42,22 @@ const memberStore = {
     return this.store.findBy(this.collection, { userid: userid });
   },
   
-  addAssessment(id,assessment) {
-    const member = this.getMember(id);
+  addAssessment(id, assessment) {
+    const member = this.getMemberById(id);
     member.assessments.push(assessment);
+    this.store.save();
+  },
+  
+  addSong(id, song) {
+    const playlist = this.getPlaylist(id);
+    playlist.songs.push(song);
+
+    let duration = 0;
+    for (let i = 0; i < playlist.songs.length; i++) {
+      duration += playlist.songs[i].duration;
+    }
+
+    playlist.duration = duration;
     this.store.save();
   },
 
