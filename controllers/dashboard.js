@@ -37,7 +37,7 @@ const dashboard = {
     const memberId = accounts.getCurrentUser(request);
     const assessmentId = request.params.assessmentid;
     //logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
-    memberStore.deleteAssessment(memberId, assessmentId);
+    memberStore.deleteAssessment(memberId.id, assessmentId);
     response.redirect("/dashboard");
   }
 };

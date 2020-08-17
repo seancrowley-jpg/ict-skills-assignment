@@ -19,26 +19,6 @@
           "upperarm": "25",
           "waist": "45",
           "hips": "58"
-        },
-        {
-          "assessmentid": "a06969e0-dbe8-11ea-8f43-c7132f8d9640",
-          "userid": "01",
-          "weight": "80",
-          "chest": "35",
-          "thigh": "40",
-          "upperarm": "25",
-          "waist": "45",
-          "hips": "46"
-        },
-        {
-          "assessmentid": "fb15eba0-e0bd-11ea-9ec0-7912e457b7d0",
-          "userid": "01",
-          "weight": "99",
-          "chest": "99",
-          "thigh": "99",
-          "upperarm": "99",
-          "waist": "99",
-          "hips": "99"
         }
       ]
     },

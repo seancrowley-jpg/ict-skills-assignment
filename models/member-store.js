@@ -48,10 +48,10 @@ const memberStore = {
     this.store.save();
   },
   
-  deleteAssessment(id, assessmentId) {
+  deleteAssessment(id, assessmentid) {
     const member = this.getMember(id);
     const assessments = member.assessments;
-    _.remove(assessments, { id: assessmentId });
+    _.remove(assessments, { assessmentid: assessmentid });
     this.store.save();
   }
 };
