@@ -20,7 +20,7 @@ const dashboard = {
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newAssessment = {
-      assessmentId: uuid.v1(),
+      assessmentid: uuid.v1(),
       userid: loggedInUser.id,
       weight: request.body.weight,
       chest: request.body.chest,
@@ -33,11 +33,11 @@ const dashboard = {
     response.redirect("/dashboard");
   },
   
-  deleteAssessment(request,response)
-  {
-    const loggedInUser = accounts.getCurrentUser(request);
-    const assessmentId = request.params.assessmentId;
-    memberStore.deleteAssessment(loggedInUser.id, assessmentId)
+  deleteAssessment(request, response) {
+    const memberId = accounts.getCurrentUser(request);
+    const assessmentId = request.params.assessmentid;
+    //logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
+    memberStore.deleteAssessment(memberId, assessmentId);
     response.redirect("/dashboard");
   }
 };

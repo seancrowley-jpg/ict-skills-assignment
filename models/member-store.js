@@ -11,7 +11,7 @@ const memberStore = {
     return this.store.findAll(this.collection);
   },
 
-  getMemberById(id) {
+  getMember(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
   
@@ -43,15 +43,15 @@ const memberStore = {
   },
   
   addAssessment(id, assessment) {
-    const member = this.getMemberById(id);
+    const member = this.getMember(id);
     member.assessments.push(assessment);
     this.store.save();
   },
   
-  removeSong(id, songId) {
-    const playlist = this.getPlaylist(id);
-    const songs = playlist.songs;
-    _.remove(songs, { id: songId });
+  deleteAssessment(id, assessmentId) {
+    const member = this.getMember(id);
+    const assessments = member.assessments;
+    _.remove(assessments, { id: assessmentId });
     this.store.save();
   }
 };
