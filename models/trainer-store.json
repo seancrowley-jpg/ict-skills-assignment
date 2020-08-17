@@ -2,7 +2,8 @@
   "trainers": [
     {
       "email": "jim@jim.com",
-      "password": "secret"
+      "password": "secret",
+      "id": "54"
     }
   ]
 }
