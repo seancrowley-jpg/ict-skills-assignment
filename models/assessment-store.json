@@ -29,6 +29,16 @@
       "upperarm": "15",
       "waist": "30",
       "hips": "32"
+    },
+    {
+      "id": "653c0450-e0a1-11ea-8942-33c67fa15f0b",
+      "userid": "01",
+      "weight": "85",
+      "chest": "33",
+      "thigh": "24",
+      "upperarm": "26",
+      "waist": "44",
+      "hips": "48"
     }
   ]
 }

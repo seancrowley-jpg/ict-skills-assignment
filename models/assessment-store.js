@@ -3,7 +3,7 @@ const JsonStore = require('./json-store');
 
 const assessmentStore = {
 
-  store: new JsonStore('./models/assessment-store.json', { assessments: [] }),
+  store: new JsonStore('./models/member-store.json', { assessments: [] }),
   collection: 'assessments',
 
   getAllAssessments() {
