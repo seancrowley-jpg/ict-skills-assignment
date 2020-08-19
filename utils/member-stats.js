@@ -3,7 +3,7 @@
 const memberStats = {
   bmi: undefined,
   bmiCategory: undefined,
-  isidelabodyweight: undefined,
+  isidealbodyweight: undefined,
   trend: undefined,
   
   generateMemberStats(member)
@@ -11,7 +11,7 @@ const memberStats = {
     const weight = member.startingweight;
     if(member.assessments.length > 0)
       {
-        const assessment = (member.assessments.length -1);
+        const assessment = member.assessments;
         weight = assessment.weight;
       }
     memberStats.bmi = this.calculateBMI(member,weight)
