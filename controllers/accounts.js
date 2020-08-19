@@ -37,13 +37,13 @@ const accounts = {
     const member = {
       email: request.body.email,
       password: request.body.password,
+      name: request.body.name,
       address: request.body.address,
       gender: request.body.gender,
       height: request.body.height,
       staringweight: request.body.startingweight,
       id: uuid.v1(),
       assessments: []
-      
     }
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);
