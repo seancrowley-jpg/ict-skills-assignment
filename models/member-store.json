@@ -19,6 +19,17 @@
           "upperarm": "25",
           "waist": "45",
           "hips": "46"
+        },
+        {
+          "assessmentid": "a57b9e50-e24e-11ea-9599-5bbcb924b2a5",
+          "userid": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
+          "weight": "80",
+          "chest": "35",
+          "thigh": "40",
+          "upperarm": "22",
+          "waist": "44",
+          "hips": "45",
+          "date": "Wed Aug 19 2020 19:03:19 GMT+0000 (Coordinated Universal Time)"
         }
       ]
     }
