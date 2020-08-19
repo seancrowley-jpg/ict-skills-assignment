@@ -28,7 +28,9 @@ const dashboard = {
       upperarm: request.body.upperarm,
       waist: request.body.waist,
       hips: request.body.hips,
-      comment: Date()
+      trend: true,
+      comment: request.body.comment,
+      date: Date()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     response.redirect("/dashboard");
