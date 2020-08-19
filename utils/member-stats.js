@@ -8,4 +8,4 @@ const memberStats = {
   
 }
 
-module.exports = memberStats;
+//module.exports = memberStats;

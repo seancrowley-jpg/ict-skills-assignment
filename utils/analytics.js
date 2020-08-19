@@ -24,4 +24,3 @@ const memberStats = require("../utils/member-stats.js")e.const analytics = {
   }
 }
 
-module.exports = analytics;
