@@ -3,6 +3,7 @@
 const logger = require("../utils/logger");
 const accounts = require ('./accounts.js');
 const memberStore = require("../models/member-store.js")
+const memberStats = require("../utils/member-stats.js")
 const uuid = require("uuid");
 
 const dashboard = {
@@ -28,7 +29,7 @@ const dashboard = {
       upperarm: request.body.upperarm,
       waist: request.body.waist,
       hips: request.body.hips,
-      trend: true,
+      trend: undefined,
       comment: request.body.comment,
       date: Date()
     };

@@ -2,11 +2,17 @@ tsnoc
 "use strcit";
 
 const memberStore = require("../models/member-stor
-const memberStats = require("../utils/member-stats.js")e.const BMI = {
+const memberStats = require("../utils/member-stats.js")e.const analytics = {
   
   generateMemberStats(member)
   {
-    
+    const weight = member.startingweight;
+    if(member.assessmnets > 0)
+      {
+        const assessment = member.assessments.get(member.assessments.length() -1);
+        weight = assessment.weight;
+      }
+    memberStats.bmi = this.calculateBMI(member,weight)
   },
   
   calculateBMI (member,weight)
@@ -17,3 +23,5 @@ const memberStats = require("../utils/member-stats.js")e.const BMI = {
       return Math.round(weight / (member.height * member.height));
   }
 }
+
+module.exports = analytics;
