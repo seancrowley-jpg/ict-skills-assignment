@@ -1,8 +1,9 @@
-tsnoc
-"use strc//it";
+"use strict";
 
-const memberStore = require("../models/member-stor
-const memberStats = require("./utils/member-stats.js")e.const analytics = {
+const memberStore = require("../models/member-store.js")
+const memberStats = require("./utils/member-stats.js")
+
+const analytics = {
   
   generateMemberStats(member)
   {

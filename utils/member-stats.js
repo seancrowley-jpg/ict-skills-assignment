@@ -9,7 +9,7 @@ const memberStats = {
   generateMemberStats(member)
   {
     const weight = member.startingweight;
-    if(member.assessments > 0)
+    if(member.assessments.length > 0)
       {
         const assessment = member.assessments.get(member.assessments.length -1);
         weight = assessment.weight;
