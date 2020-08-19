@@ -1,4 +1,26 @@
 {
   "members": [
+    {
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "name": "Homer Simpson",
+      "address": "Springfield",
+      "gender": "Male",
+      "height": "1.7",
+      "startingweight": "101",
+      "id": "01",
+      "assessments": [
+        {
+          "assessmentid": "e78e5fd0-dbe6-11ea-b7b1-2345ac643b25",
+          "userid": "01",
+          "weight": "80",
+          "chest": "35",
+          "thigh": "40",
+          "upperarm": "25",
+          "waist": "45",
+          "hips": "58"
+        }
+      ]
+    }
   ]
 }
