@@ -1,8 +1,8 @@
 tsnoc
-"use strcit";
+"use strc//it";
 
 const memberStore = require("../models/member-stor
-const memberStats = require("../utils/member-stats.js")e.const analytics = {
+const memberStats = require("./utils/member-stats.js")e.const analytics = {
   
   generateMemberStats(member)
   {
@@ -24,3 +24,4 @@ const memberStats = require("../utils/member-stats.js")e.const analytics = {
   }
 }
 
+module.exports = analytics;

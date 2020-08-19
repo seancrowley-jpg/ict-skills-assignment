@@ -5,7 +5,6 @@ const memberStats = {
   bmiCategory: undefined,
   isidelabodyweight: undefined,
   trend: undefined
-  
 }
 
-//module.exports = memberStats;
+module.exports = memberStats;
