@@ -11,7 +11,7 @@ const memberStats = {
     const weight = member.startingweight;
     if(member.assessments.length > 0)
       {
-        const assessment = member.assessments;
+        const assessment = member.assessments[member.assessments.length - 1].weight;
         weight = assessment.weight;
       }
     memberStats.bmi = this.calculateBMI(member,weight)
