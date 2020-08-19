@@ -28,6 +28,7 @@ const dashboard = {
       upperarm: request.body.upperarm,
       waist: request.body.waist,
       hips: request.body.hips,
+      comment: Date()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     response.redirect("/dashboard");
