@@ -8,7 +8,7 @@ const memberStats = {
   
   generateMemberStats(member)
   {
-    const weight = member.startingweight;
+    var weight = member.startingweight;
     if(member.assessments.length > 0)
       {
         weight = member.assessments[member.assessments.length - 1].weight;
