@@ -3,7 +3,7 @@
 const logger = require("../utils/logger");
 const accounts = require ('./accounts.js');
 const memberStore = require("../models/member-store.js")
-//const analytics = require("../utils/analytics.js")
+const analytics = require("../utils/analytics.js")
 const memberStats = require("../utils/member-stats.js")
 const uuid = require("uuid");
 
@@ -11,7 +11,7 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    var memberStats = memberStats.generateMemberStats(loggedInUser);
+    var memberStats = analytics.generateMemberStats(loggedInUser);
     const viewData = {
       title: "Dashboard",
       member: loggedInUser,
