@@ -17,6 +17,7 @@ const dashboard = {
       analytics: memberStats
     };
     logger.info('about to render')
+    logger.info(memberStats);
     response.render("dashboard", viewData);
   },
   
