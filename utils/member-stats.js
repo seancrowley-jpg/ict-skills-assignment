@@ -1,7 +1,7 @@
 "use strict";
 
-const memberStats = {
-  bmi: undefined,
+var memberStats = {
+  bmi: 0,
   bmiCategory: undefined,
   isidealbodyweight: undefined,
   trend: undefined,
@@ -14,6 +14,7 @@ const memberStats = {
         weight = member.assessments[member.assessments.length - 1].weight;
       }
     memberStats.bmi = this.calculateBMI(member,weight)
+    return memberStats.bmi;
   },
   
   calculateBMI (member,weight)
@@ -21,7 +22,7 @@ const memberStats = {
     if(member.height <= 0)
       return 0;
     else
-      return Math.round(weight / (member.height * member.height));
+      return (weight / (member.height * member.height));
   }
 }
 

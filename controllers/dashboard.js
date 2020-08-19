@@ -11,7 +11,7 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    let memberStats = memberStats.generateMemberStats(loggedInUser);
+    var memberStats = memberStats.generateMemberStats(loggedInUser);
     const viewData = {
       title: "Dashboard",
       member: loggedInUser,
