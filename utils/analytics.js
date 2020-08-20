@@ -45,6 +45,26 @@ var analytics = {
             bmiCategory = ("SEVERELY OBESE");
             return bmiCategory;
         } else return null;
+  },
+  
+  isIdealBodyWeight (member)
+  {
+    let devine = 50 + 0.9 * ((member.height * 100) - 152);
+    let devineF = 45.5 + 0.9 * ((member.height * 100) - 152);
+    if ( (member.gender.equals("M")) && (Math.round(devine) != Math.round(assessment.weight)) ) {
+      return false;
+    }
+    else if ( (member.gender.equals("M")) && (Math.round(devine) == Math.round(assessment.weight)) ) {
+      return true;
+    }
+    if ( ((member.gender.equals("F")) || (member.gender.equals("Unspecified"))) && (Math.round(devineF) != Math.round(assessment.weight)) ) {
+      return false;
+    }
+    else if ( ((member.gender.equals("F")) || (member.gender.equals("Unspecified"))) && (Math.round(devineF) == Math.round(assessment.weight)) ) {
+      return true;
+    }
+    else return false;
+    }
   }
 }
 
