@@ -2,7 +2,7 @@
 
 var memberStats = {
   bmi: undefined,
-  bmiCategory: undefined,
+  bmicategory: undefined,
   isidealbodyweight: undefined,
   trend: undefined,
 }

@@ -20,7 +20,12 @@ var analytics = {
     if(member.height <= 0)
       return 0;
     else
-      return (weight / (member.height * member.height));
+      return Math.round((weight / (member.height * member.height)));
+  },
+  
+  determineBMICategory (bmi) {
+    let bmicategory = " ";
+    
   }
 }
 
