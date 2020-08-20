@@ -3,7 +3,7 @@
 const logger = require("../utils/logger");
 const accounts = require ('./accounts.js');
 const memberStore = require("../models/member-store.js")
-const memberStats = require("../utils/member-stats.js")
+const analytics = require("../utils/analytics.js")
 const uuid = require("uuid");
 
 const trainerdashboard = {
@@ -21,8 +21,11 @@ const trainerdashboard = {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+    var memberStats = analytics.generateMemberStats(member);
     const viewData = {
+      title: "Trainer Dashboard",
       member: member,
+      analytics: memberStats
     }
     logger.info("about to render")
     response.render("trainerassessment", viewData)
