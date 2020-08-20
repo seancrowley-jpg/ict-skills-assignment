@@ -3,6 +3,7 @@
     {
       "email": "marge@simpson.com",
       "password": "secret",
+<<<<<<< HEAD
       "name": "Marge",
       "address": "Evergreen Terrace",
       "gender": "Female",
@@ -43,6 +44,14 @@
       "height": "2.0",
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+=======
+      "name": "Homer Simpson",
+      "address": "Evergreen Terrace",
+      "gender": "M",
+      "height": "1.7",
+      "staringweight": "101",
+      "id": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
+>>>>>>> bb5ffe3cd9566a44b1b8e92a8eab3e25f778cc81
       "assessments": []
     }
   ]
