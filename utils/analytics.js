@@ -52,7 +52,7 @@ var analytics = {
   {
     let devine = 50 + 0.9 * ((member.height * 100) - 152);
     let devineF = 45.5 + 0.9 * ((member.height * 100) - 152);
-    if ( (member.gender === ("M")) && (Math.round(devine) != Math.round(weight)) ) {
+    if ( (member.gender === ("M")) && (Math.round(devine) != Math.round(weight) ) ) {
       return false;
     }
     else if ( (member.gender ===("M")) && (Math.round(devine) == Math.round(weight)) ) {
