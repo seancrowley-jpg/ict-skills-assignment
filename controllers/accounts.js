@@ -41,7 +41,7 @@ const accounts = {
       address: request.body.address,
       gender: request.body.gender,
       height: request.body.height,
-      staringweight: request.body.startingweight,
+      startingweight: request.body.startingweight,
       id: uuid.v1(),
       assessments: []
     }
