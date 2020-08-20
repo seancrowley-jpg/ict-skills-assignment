@@ -11,7 +11,18 @@
       "id": "1fe3c470-e2da-11ea-8a21-03a2af2b68f1",
       "assessments": [
         {
-          "assessmentid": "9c8b53b0-e2eb-11ea-acd8-732af45e10be",
+          "assessmentid": "457de0c0-e2ef-11ea-ad78-09b6807dfab4",
+          "userid": "1fe3c470-e2da-11ea-8a21-03a2af2b68f1",
+          "weight": "70",
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "date": "Thu Aug 20 2020 14:13:07 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "assessmentid": "4efe4810-e2ef-11ea-ad78-09b6807dfab4",
           "userid": "1fe3c470-e2da-11ea-8a21-03a2af2b68f1",
           "weight": "65.9",
           "chest": "",
@@ -19,7 +30,7 @@
           "upperarm": "",
           "waist": "",
           "hips": "",
-          "date": "Thu Aug 20 2020 13:46:55 GMT+0000 (Coordinated Universal Time)"
+          "date": "Thu Aug 20 2020 14:13:23 GMT+0000 (Coordinated Universal Time)"
         }
       ]
     },
