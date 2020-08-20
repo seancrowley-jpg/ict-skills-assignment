@@ -13,6 +13,7 @@ var analytics = {
       }
     memberStats.bmi = this.calculateBMI(member,weight);
     memberStats.bmicategory = this.determineBMICategory(memberStats.bmi);
+    memberStats.isidealbodyweight = this.isIdealBodyWeight(member);
     return memberStats;
   },
   
@@ -51,21 +52,20 @@ var analytics = {
   {
     let devine = 50 + 0.9 * ((member.height * 100) - 152);
     let devineF = 45.5 + 0.9 * ((member.height * 100) - 152);
-    if ( (member.gender.equals("M")) && (Math.round(devine) != Math.round(assessment.weight)) ) {
+    if ( (member.gender ===("M")) && (Math.round(devine) != Math.round(member.assessments.weight)) ) {
       return false;
     }
-    else if ( (member.gender.equals("M")) && (Math.round(devine) == Math.round(assessment.weight)) ) {
+    else if ( (member.gender ===("M")) && (Math.round(devine) == Math.round(member.assessments.weight)) ) {
       return true;
     }
-    if ( ((member.gender.equals("F")) || (member.gender.equals("Unspecified"))) && (Math.round(devineF) != Math.round(assessment.weight)) ) {
+    if ( ((member.gender ===("F")) || (member.gender ===("Unspecified"))) && (Math.round(devineF) != Math.round(member.assessments.weight)) ) {
       return false;
     }
-    else if ( ((member.gender.equals("F")) || (member.gender.equals("Unspecified"))) && (Math.round(devineF) == Math.round(assessment.weight)) ) {
+    else if ( ((member.gender ===("F")) || (member.gender ===("Unspecified"))) && (Math.round(devineF) == Math.round(member.assessments.weight)) ) {
       return true;
     }
     else return false;
     }
   }
-}
 
 module.exports = analytics;
