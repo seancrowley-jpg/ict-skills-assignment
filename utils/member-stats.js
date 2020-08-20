@@ -1,7 +1,7 @@
 "use strict";
 
 var memberStats = {
-  bmi: 20,
+  bmi: undefined,
   bmiCategory: undefined,
   isidealbodyweight: undefined,
   trend: undefined,

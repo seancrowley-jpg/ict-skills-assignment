@@ -11,27 +11,28 @@
       "id": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
       "assessments": [
         {
-          "assessmentid": "02660520-e221-11ea-b987-91898a2a047e",
+          "assessmentid": "689babe0-e2d7-11ea-8fa5-671466b9887a",
           "userid": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
           "weight": "80",
-          "chest": "35",
-          "thigh": "40",
-          "upperarm": "25",
-          "waist": "45",
-          "hips": "46"
-        },
-        {
-          "assessmentid": "a57b9e50-e24e-11ea-9599-5bbcb924b2a5",
-          "userid": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
-          "weight": "80",
-          "chest": "35",
-          "thigh": "40",
-          "upperarm": "22",
-          "waist": "44",
-          "hips": "45",
-          "date": "Wed Aug 19 2020 19:03:19 GMT+0000 (Coordinated Universal Time)"
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "date": "Thu Aug 20 2020 11:22:18 GMT+0000 (Coordinated Universal Time)"
         }
       ]
+    },
+    {
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "name": "Marge",
+      "address": "Evergreen Terrace",
+      "gender": "Female",
+      "height": "1.5",
+      "staringweight": "70",
+      "id": "13ca74b0-e2d8-11ea-b116-990db0f9614d",
+      "assessments": []
     }
   ]
 }

@@ -12,7 +12,7 @@ var analytics = {
         weight = member.assessments[member.assessments.length - 1].weight;
       }
     memberStats.bmi = this.calculateBMI(member,weight)
-    return memberStats.bmi;
+    return memberStats;
   },
   
   calculateBMI (member,weight)
