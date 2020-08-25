@@ -19,7 +19,6 @@ const settings = {
   },
   
   updateMember(request,response) {
-    const memberId = request.params.id;
     const member = accounts.getCurrentUser(request);
     const updatedMember = {
       email: request.body.email,
@@ -28,7 +27,7 @@ const settings = {
       address: request.body.address,
       gender: request.body.gender,
       height: request.body.height,
-      startingWeight: request.body.startingweight
+      startingweight: request.body.startingweight
     }
     logger.info(member);
     memberStore.updateMember(member,updatedMember)
