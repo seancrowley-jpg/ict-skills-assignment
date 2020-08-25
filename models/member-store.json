@@ -35,13 +35,12 @@
       ]
     },
     {
-      "email": "homer@simpson.com",
+      "email": "homer@home",
       "password": "secret",
-      "name": "Homer Simpson",
+      "name": "Homer Jay Simpson",
       "address": "Evergreen Terrace",
       "gender": "M",
-      "height": "2.0",
-      "startingweight": "101",
+      "height": "1.8",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": []
     }

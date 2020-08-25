@@ -14,12 +14,13 @@ const settings = {
       title: 'Settings',
       member: loggedInUser
     };
+    logger.info(loggedInUser);
     response.render('settings', viewData);
   },
   
   updateMember(request,response) {
     const memberId = request.params.id;
-    const member = memberStore.getMember(memberId)
+    const member = accounts.getCurrentUser(request);
     const updatedMember = {
       email: request.body.email,
       password: request.body.password,
