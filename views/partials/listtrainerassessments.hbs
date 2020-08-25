@@ -8,6 +8,7 @@
       <th>Waist</th>
       <th>Hips</th>
       <th>Comment</th>
+      <th>Edit Comment</th>
     </tr>
   </thead>
   <tbody>
@@ -34,16 +35,15 @@
         <td>
           {{comment}}
         </td>
+        <td>
+          <form class="ui form" action="/trainerassessment/{{assessmentid}}/addcomment" method="POST">
+            <div class="ui field">
+              <textarea rows="2" name="comment"> {{member.assessments.comment}} </textarea>
+            </div>
+            <button class="ui blue submit button"> Update </button>
+          </form>
+        </td>
       </tr>
     {{/each}}
   </tbody>
 </table>
-<h4 class="ui headder">
-    Comments
-  </h4>
-  <form class="ui form" action="/editcomment/${assessment.id}" method="POST">
-    <div class="ui field">
-      <textarea rows="2" name="comment"> {{member.assessments.comment}} </textarea>
-    </div>
-    <button class="ui blue submit button"> Update </button>
-  </form>
