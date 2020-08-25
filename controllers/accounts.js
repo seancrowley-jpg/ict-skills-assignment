@@ -72,6 +72,13 @@ const accounts = {
     const userEmail = request.cookies.assessment;
     return memberstore.getMemberByEmail(userEmail);
   },
+  
+  settings(request, response) {
+    const viewData = {
+      title: 'Settings',
+    };
+    response.render('/accountsettings', viewData);
+  },
 };
 
 module.exports = accounts;
