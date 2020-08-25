@@ -37,8 +37,8 @@ const memberStore = {
   
   getAssessment(memberid,assessmentid) {
     const member =  this.getMember(memberid);
-    const assessment = member.assessments.filter(assessment => assessment.assessmentid == assessmentid);
-    return assessment;
+    const assessment = member.assessments.filter(assessment => assessment.id == assessmentid);
+    return assessment[0];
     
   },
   
@@ -72,12 +72,12 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(assessment,comment)
+  editComment(memberid,assessmentid,comment)
   {
-
-    //const assessment =  this.getAssessment(memberid,assessmentId);
+    //const member = this.getMember(memberid)
+    const assessment = this.getAssessment(memberid,assessmentid)
     assessment.comment = comment;
-    logger.info("Assessment = ",assessment);
+    //logger.info("Assessment = ",assessmentid);
     this.store.save();
   }
 };
