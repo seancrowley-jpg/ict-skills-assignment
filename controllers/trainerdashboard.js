@@ -47,6 +47,7 @@ const trainerdashboard = {
     const assessmentId = request.params.assessmentid;
     //const assessment = memberStore.getAssessment(memberId,assessmentId);
     const comment = request.body.comment;
+    logger.info("Comment = ",comment)
     memberStore.editComment(assessmentId,comment)
     response.redirect("/trainerdashboard")
   }

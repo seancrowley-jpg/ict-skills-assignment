@@ -9,9 +9,7 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-      "assessments": [
-        
-      ]
+      "assessments": []
     },
     {
       "email": "homer@simpson.com",
@@ -20,9 +18,21 @@
       "address": "Evergreen Terrace",
       "gender": "M",
       "height": "2.0",
+      "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
-        ]
+        {
+          "assessmentid": "bf205920-e6ec-11ea-9d18-57b7f44e69b0",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": "80",
+          "chest": "32",
+          "thigh": "40",
+          "upperarm": "25",
+          "waist": "45",
+          "hips": "48",
+          "date": "Tue Aug 25 2020 16:05:08 GMT+0000 (Coordinated Universal Time)"
+        }
+      ]
     }
   ]
 }
