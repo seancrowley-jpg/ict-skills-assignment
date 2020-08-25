@@ -33,7 +33,7 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
       trend: undefined,
-      comment: undefined,
+      comment: "",
       date: Date()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);
