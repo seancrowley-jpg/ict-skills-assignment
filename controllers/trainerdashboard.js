@@ -36,6 +36,12 @@ const trainerdashboard = {
     const memberId = request.params.id;
     memberStore.deleteMember(memberId);
     response.redirect("/trainerdashboard")
+  },
+  
+  editComment(request,response)
+  {
+    logger.info("Editing Comment")
+    
   }
 };
 
