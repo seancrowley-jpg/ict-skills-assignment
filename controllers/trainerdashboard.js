@@ -39,7 +39,7 @@ const trainerdashboard = {
     response.redirect("/trainerdashboard")
   },
   
-  editComment(request,response)
+  updateComment(request,response)
   {
     logger.info("Editing Comment")
     const memberId = request.params.id;
