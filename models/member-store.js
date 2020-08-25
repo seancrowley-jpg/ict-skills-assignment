@@ -57,7 +57,15 @@ const memberStore = {
   
   updateMember(member,updatedMember)
   {
-    member.
+    member.email = updatedMember.email;
+    member.password = updatedMember.password;
+    member.name = updatedMember.name;
+    member.address = updatedMember.address;
+    member.gender = updatedMember.gender;
+    member.height = updatedMember.height;
+    member.startingweight = updatedMember.startingweight;
+    
+    this.store.save();
   }
 };
 

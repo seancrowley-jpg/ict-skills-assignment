@@ -15,6 +15,7 @@ router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 router.get('/settings', accounts.settings);
+router.post('settingd/update')
 
 router.get("/dashboard", dashboard.index);
 router.post("/dashboard/addassessment", dashboard.addAssessment);

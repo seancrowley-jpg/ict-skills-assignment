@@ -80,6 +80,19 @@ const accounts = {
     response.render('settings', viewData);
   },
   
+  updateAccount(request,response) {
+    const member = this.getCurrentUser;
+    const updatedMember = {
+      email: request.body.email,
+      password: request.body.password,
+      name: request.body.name,
+      address: request.body.address,
+      gender: request.body.gender,
+      height: request.body.height,
+      startingWeight: request.body.startingweight
+    }
+    memberstore.updateMember(member,updatedMember)
+  }
 };
 
 module.exports = accounts;
