@@ -33,16 +33,16 @@
           "date": "Tue Aug 25 2020 16:05:08 GMT+0000 (Coordinated Universal Time)"
         },
         {
-          "assessmentid": "cd1a9de0-e6ee-11ea-8682-25ce23213e2d",
+          "assessmentid": "7ef947e0-e6fa-11ea-a43a-cb79d46e28f1",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
+          "weight": "80",
+          "chest": "33",
+          "thigh": "44",
+          "upperarm": "28",
+          "waist": "46",
+          "hips": "50",
           "comment": "",
-          "date": "Tue Aug 25 2020 16:19:50 GMT+0000 (Coordinated Universal Time)"
+          "date": "Tue Aug 25 2020 17:43:33 GMT+0000 (Coordinated Universal Time)"
         }
       ]
     }
