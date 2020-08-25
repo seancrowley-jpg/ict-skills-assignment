@@ -1,6 +1,14 @@
 "use strict"
 
-settings(request, response) {
+const logger = require("../utils/logger");
+const accounts = require ('./accounts.js');
+const memberStore = require("../models/member-store.js")
+const analytics = require("../utils/analytics.js")
+const uuid = require("uuid");
+
+const settings = {
+  
+  index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Settings',
@@ -9,9 +17,9 @@ settings(request, response) {
     response.render('settings', viewData);
   },
   
-  updateAccount(request,response) {
+  updateMember(request,response) {
     const memberId = request.params.id;
-    const member = memberstore.getMember(memberId)
+    const member = memberStore.getMember(memberId)
     const updatedMember = {
       email: request.body.email,
       password: request.body.password,
@@ -21,7 +29,10 @@ settings(request, response) {
       height: request.body.height,
       startingWeight: request.body.startingweight
     }
-    memberstore.updateMember(member,updatedMember)
+    logger.info(member);
+    memberStore.updateMember(member,updatedMember)
     response.redirect('/dashboard')
   }
 };
+
+module.exports = settings;
