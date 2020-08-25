@@ -28,7 +28,7 @@ const trainerdashboard = {
       analytics: memberStats
     }
     logger.info("about to render")
-    logger.info()
+    logger.info(member)
     response.render("trainerassessment", viewData)
   },
   
@@ -43,12 +43,12 @@ const trainerdashboard = {
   {
     logger.info("Editing Comment")
     const memberId = request.params.id;
-    const member = memberStore.getMember(memberId);
+    //const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
-    const assessment = memberStore.getAssessment(memberId,assessmentId);
+    //const assessment = memberStore.getAssessment(memberId,assessmentId);
     const comment = request.body.comment;
     memberStore.editComment(assessmentId,comment)
-    response.redirect("/trainerassessment/:id")
+    response.redirect("/trainerdashboard")
   }
 };
 

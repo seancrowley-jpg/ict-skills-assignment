@@ -10,28 +10,7 @@
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
       "assessments": [
-        {
-          "assessmentid": "d26e73a0-e2ea-11ea-acd8-732af45e10be",
-          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-          "weight": "70",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
-          "date": "Thu Aug 20 2020 13:41:16 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "assessmentid": "72deafd0-e2eb-11ea-acd8-732af45e10be",
-          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-          "weight": "70.5",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
-          "date": "Thu Aug 20 2020 13:45:46 GMT+0000 (Coordinated Universal Time)"
-        }
+        
       ]
     },
     {
@@ -43,30 +22,7 @@
       "height": "2.0",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
-        {
-          "assessmentid": "deb069a0-e6d4-11ea-a54a-7529a1d87131",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
-          "date": "Tue Aug 25 2020 13:14:13 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "assessmentid": "c6d85620-e6e4-11ea-b4c2-bd62cc323298",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "80",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
-          "date": "Tue Aug 25 2020 15:08:05 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
-      "startingweight": "101"
+        ]
     }
   ]
 }
