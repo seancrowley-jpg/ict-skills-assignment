@@ -28,6 +28,7 @@ const trainerdashboard = {
       analytics: memberStats
     }
     logger.info("about to render")
+    logger.info()
     response.render("trainerassessment", viewData)
   },
   
@@ -42,8 +43,9 @@ const trainerdashboard = {
   {
     logger.info("Editing Comment")
     const member = accounts.getCurrentUser(request);
+    const assessmentId = request.params.assessmentid;
     const comment = request.body.comment;
-    memberStore.editComment(member,comment)
+    memberStore.editComment(assessmentId,comment)
     response.redirect("/trainerassessment/:id")
   }
 };

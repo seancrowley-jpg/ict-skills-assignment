@@ -53,6 +53,17 @@
           "waist": "",
           "hips": "",
           "date": "Tue Aug 25 2020 13:14:13 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "assessmentid": "c6d85620-e6e4-11ea-b4c2-bd62cc323298",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": "80",
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "date": "Tue Aug 25 2020 15:08:05 GMT+0000 (Coordinated Universal Time)"
         }
       ],
       "startingweight": "101"
