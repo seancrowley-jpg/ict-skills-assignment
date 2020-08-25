@@ -2,6 +2,7 @@
 
 const _ = require('lodash');
 const JsonStore = require('./json-store');
+const logger = require("../utils/logger");
 
 const memberStore = {
   store: new JsonStore('./models/member-store.json', { members: [] }),
@@ -34,8 +35,10 @@ const memberStore = {
     this.store.save();
   },
   
-  getAssessment(assessmentid) {
-    return this.store.findBy(this.collection, { assessmentid: assessmentid });
+  getAssessment(memberid,assessmentid) {
+    const member =  this.getMember(memberid);
+    const assessment = me
+    
   },
   
   getUserAssessments(userid) {
@@ -70,8 +73,9 @@ const memberStore = {
   
   editComment(member,assessmentId,comment)
   {
-    const assessment =  this.getAssessment(assessmentId)
+    const assessment =  member.assessments
     assessment.comment = comment;
+    logger.info("Assessment = ",assessment)
     this.store.save();
   }
 };
