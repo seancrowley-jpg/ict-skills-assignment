@@ -37,7 +37,8 @@ const memberStore = {
   
   getAssessment(memberid,assessmentid) {
     const member =  this.getMember(memberid);
-    const assessment = me
+    const assessment = member.assessments.filter(assessment => assessment.id == assessmentid);
+    return assessment;
     
   },
   
