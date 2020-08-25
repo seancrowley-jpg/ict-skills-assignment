@@ -72,11 +72,12 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(member,assessmentId,comment)
+  editComment(id,assessmentId,comment)
   {
-    const assessment =  member.assessments
+    const member = this.getMember(id);
+    const assessment =  this.getAseesment(memberid,assessmentId);
     assessment.comment = comment;
-    logger.info("Assessment = ",assessment)
+    logger.info("Assessment = ",assessment);
     this.store.save();
   }
 };
