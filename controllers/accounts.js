@@ -81,7 +81,7 @@ const accounts = {
   },
   
   updateAccount(request,response) {
-    const member = this.getCurrentUser;
+    const member = memberstore.getMember
     const updatedMember = {
       email: request.body.email,
       password: request.body.password,
@@ -92,6 +92,7 @@ const accounts = {
       startingWeight: request.body.startingweight
     }
     memberstore.updateMember(member,updatedMember)
+    response.redirect('/dashboard')
   }
 };
 
