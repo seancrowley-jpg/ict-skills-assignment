@@ -77,8 +77,9 @@ const accounts = {
     const viewData = {
       title: 'Settings',
     };
-    response.render('/accountsettings', viewData);
+    response.render('settings', viewData);
   },
+  
 };
 
 module.exports = accounts;

@@ -53,6 +53,11 @@ const memberStore = {
     const assessments = member.assessments;
     _.remove(assessments, { assessmentid: assessmentid });
     this.store.save();
+  },
+  
+  updateMember(member,updatedMember)
+  {
+    member.
   }
 };
 
