@@ -66,6 +66,12 @@ const memberStore = {
     member.startingweight = updatedMember.startingweight;
     
     this.store.save();
+  },
+  
+  editComment(member, comment)
+  {
+    member.assessments.comment = comment;
+    this.store.save();
   }
 };
 

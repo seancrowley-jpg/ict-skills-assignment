@@ -15,7 +15,6 @@ const trainerStore = {
     return this.store.findOneBy(this.collection, { password: password });
   },
   
-  editComment(assessmentid, comment)
 };
 
 module.exports = trainerStore;

@@ -41,7 +41,10 @@ const trainerdashboard = {
   editComment(request,response)
   {
     logger.info("Editing Comment")
-    
+    const member = accounts.getCurrentUser(request);
+    const comment = request.body.comment;
+    memberStore.editComment(member,comment)
+    response.redirect("/trainerassessment")
   }
 };
 
