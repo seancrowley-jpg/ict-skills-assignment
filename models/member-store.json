@@ -3,11 +3,11 @@
     {
       "email": "marge@simpson.com",
       "password": "secret",
-      "name": "Marge",
+      "name": "Marge Simpson",
       "address": "Evergreen Terrace",
-      "gender": "Female",
-      "height": "1.8",
-      "startingweight": "80",
+      "gender": "F",
+      "height": "1.5",
+      "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
       "assessments": [
         {
@@ -44,15 +44,15 @@
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
         {
-          "assessmentid": "206c11b0-e6d4-11ea-8500-0161c9db8a24",
+          "assessmentid": "deb069a0-e6d4-11ea-a54a-7529a1d87131",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "80",
+          "weight": "90",
           "chest": "",
           "thigh": "",
           "upperarm": "",
           "waist": "",
           "hips": "",
-          "date": "Tue Aug 25 2020 13:08:53 GMT+0000 (Coordinated Universal Time)"
+          "date": "Tue Aug 25 2020 13:14:13 GMT+0000 (Coordinated Universal Time)"
         }
       ],
       "startingweight": "101"

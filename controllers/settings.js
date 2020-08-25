@@ -31,7 +31,7 @@ const settings = {
     }
     logger.info(member);
     memberStore.updateMember(member,updatedMember)
-    response.redirect('/dashboard')
+    response.redirect('/settings0')
   }
 };
 
