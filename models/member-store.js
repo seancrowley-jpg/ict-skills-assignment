@@ -35,10 +35,10 @@ const memberStore = {
     this.store.save();
   },
   
-  getAssessment(memberid,assessmentid) {
-    const member =  this.getMember(memberid);
-    const assessment = member.assessments.filter(assessment => assessment.id == assessmentid);
-    return assessment[0];
+  getAssessment(assessmentid) {
+    const assessment =  this.store.findOneBy(this.collection, { assessmentid: assessmentid });
+    //const assessments = member.assessments.filter(assessment => assessment.id == assessmentid);
+    return assessment
     
   },
   
@@ -72,13 +72,9 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(memberid,assessmentid,comment)
+  editComment(assessment,comment)
   {
-    //const member = this.getMember(memberid)
-    const assessment = this.getAssessment(memberid,assessmentid)
-    assessment.comment = comment;
-    //logger.info("Assessment = ",assessmentid);
-    this.store.save();
+
   }
 };
 
