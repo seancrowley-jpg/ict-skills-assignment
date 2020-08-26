@@ -50,7 +50,7 @@ const trainerdashboard = {
     logger.info("Assessment",assessment)
     const comment = request.body.comment;
     logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
-    //memberStore.editComment(assessment,comment);
+    memberStore.editComment(assessment,comment);
     response.redirect("/trainerdashboard");
     
   }

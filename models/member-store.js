@@ -71,7 +71,7 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(assessment,comment)
+  editComment(assessmentid,comment)
   {
     assessment.comment = comment;
     this.store.save()

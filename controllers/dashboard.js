@@ -23,6 +23,7 @@ const dashboard = {
   
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
+    const today = new Date();
     const newAssessment = {
       assessmentid: uuid.v1(),
       userid: loggedInUser.id,
@@ -33,8 +34,8 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
       trend: Boolean,
-      comment: "",
-      date: Date.now()
+      comment: "?",
+      date: today.toGMTString()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     response.redirect("/dashboard");

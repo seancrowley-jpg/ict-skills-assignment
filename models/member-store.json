@@ -36,30 +36,16 @@
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
         {
-          "assessmentid": "bf205920-e6ec-11ea-9d18-57b7f44e69b0",
+          "assessmentid": "8697d5f0-e7a1-11ea-a532-ebd5fe5189f0",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
           "weight": "80",
-          "chest": "32",
-          "thigh": "40",
-          "upperarm": "25",
-          "waist": "45",
-          "hips": "48",
-          "trend": true,
-          "comment": "",
-          "date": "Tue Aug 25 2020 16:05:08 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "assessmentid": "7ef947e0-e6fa-11ea-a43a-cb79d46e28f1",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "80",
-          "chest": "33",
-          "thigh": "44",
-          "upperarm": "28",
-          "waist": "46",
-          "hips": "50",
-          "trend": true,
-          "comment": "",
-          "date": "Tue Aug 25 2020 17:43:33 GMT+0000 (Coordinated Universal Time)"
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "comment": "?",
+          "date": "Wed, 26 Aug 2020 13:39:12 GMT"
         }
       ]
     }
