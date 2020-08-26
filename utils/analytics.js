@@ -14,6 +14,8 @@ var analytics = {
     memberStats.bmi = this.calculateBMI(member,weight);
     memberStats.bmicategory = this.determineBMICategory(memberStats.bmi);
     memberStats.isidealbodyweight = this.isIdealBodyWeight(member,weight);
+    memberStats.trend = true;
+    
     return memberStats;
   },
   

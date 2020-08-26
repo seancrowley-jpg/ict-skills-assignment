@@ -46,7 +46,7 @@ const trainerdashboard = {
   {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
-    const assessmentId = member.assessments.assessmentid;
+    const assessmentId = request.params.assessmentid;
     const assessment = memberStore.getAssessment(memberId,assessmentId)
     logger.info("Assessment",assessment)
     const comment = request.body.comment;
