@@ -42,9 +42,9 @@ const dashboard = {
   },
   
   deleteAssessment(request, response) {
-    const memberId = accounts.getCurrentUser(request);
+    const member = accounts.getCurrentUser(request);
     const assessmentId = request.params.assessmentid;
-    memberStore.deleteAssessment(memberId.id, assessmentId);
+    memberStore.deleteAssessment(member.id, assessmentId);
     response.redirect("/dashboard");
   }
 };

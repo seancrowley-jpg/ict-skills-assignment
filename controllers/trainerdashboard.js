@@ -27,11 +27,11 @@ const trainerdashboard = {
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
-      assessment: memberStore.getUserAssessments(memberId),
+      //assessment: memberStore.getUserAssessments(memberId),
       analytics: memberStats
     }
     logger.info("about to render")
-    logger.info(member)
+    logger.info(memberId)
     response.render("trainerassessment", viewData)
   },
   
@@ -45,9 +45,9 @@ const trainerdashboard = {
   updateComment(request,response)
   {
     const memberId = request.params.id;
-    const member = memberStore.getMember(memberId);
+    //const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
-    const assessment = memberStore.getAssessment(assessmentId)
+    const assessment = memberStore.getAssessment(memberId,assessmentId)
     logger.info("Assessment",assessment)
     const comment = request.body.comment;
     logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
