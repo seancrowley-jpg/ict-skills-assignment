@@ -21,10 +21,12 @@ const trainerdashboard = {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+    const assessmentId = request.params.assessmentid;
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
+      assessment: memberStore.getAssessment(memberId, assessmentId),
       analytics: memberStats
     }
     logger.info("about to render")
