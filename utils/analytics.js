@@ -9,13 +9,16 @@ var analytics = {
     let weight = member.startingweight;
     if(member.assessments.length > 0)
       {
-        weight = member.assessments[member.assessments.length - 1].weight;
+        weight = member.assessments[0].weight;
       }
     memberStats.bmi = this.calculateBMI(member,weight);
     memberStats.bmicategory = this.determineBMICategory(memberStats.bmi);
     memberStats.isidealbodyweight = this.isIdealBodyWeight(member,weight);
     memberStats.trend = true;
-    
+    if(member.assessments.length > 1)
+      {
+        
+      }
     return memberStats;
   },
   

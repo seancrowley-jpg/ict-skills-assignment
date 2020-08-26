@@ -36,16 +36,16 @@
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
         {
-          "assessmentid": "8187e620-e7b7-11ea-ab15-63d0e8de2cb5",
+          "assessmentid": "efd66540-e7ba-11ea-8520-95c50f0fb590",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "80",
+          "weight": "110",
           "chest": "",
           "thigh": "",
           "upperarm": "",
           "waist": "",
           "hips": "",
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 16:16:32 GMT"
+          "date": "Wed, 26 Aug 2020 16:41:06 GMT"
         }
       ]
     }
