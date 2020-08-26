@@ -24,7 +24,7 @@ const dashboard = {
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const today = new Date();
-    const newAssessment = {
+    let newAssessment = {
       assessmentid: uuid.v1(),
       userid: loggedInUser.id,
       weight: request.body.weight,
