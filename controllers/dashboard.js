@@ -32,8 +32,8 @@ const dashboard = {
       upperarm: request.body.upperarm,
       waist: request.body.waist,
       hips: request.body.hips,
-      trend: undefined,
-      comment: undefined,
+      trend: Boolean,
+      comment: " ",
       date: Date()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);

@@ -9,7 +9,19 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-      "assessments": []
+      "assessments": [
+        {
+          "assessmentid": "53cc2170-e79d-11ea-80dd-359ffe18b540",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": "60",
+          "chest": "20",
+          "thigh": "35",
+          "upperarm": "19",
+          "waist": "40",
+          "hips": "45",
+          "date": "Wed Aug 26 2020 13:09:08 GMT+0000 (Coordinated Universal Time)"
+        }
+      ]
     },
     {
       "email": "homer@simpson.com",
