@@ -19,6 +19,8 @@
           "upperarm": "19",
           "waist": "40",
           "hips": "45",
+          "trend": true,
+          "comment": "",
           "date": "Wed Aug 26 2020 13:09:08 GMT+0000 (Coordinated Universal Time)"
         }
       ]
@@ -42,6 +44,8 @@
           "upperarm": "25",
           "waist": "45",
           "hips": "48",
+          "trend": true,
+          "comment": "",
           "date": "Tue Aug 25 2020 16:05:08 GMT+0000 (Coordinated Universal Time)"
         },
         {
@@ -53,6 +57,7 @@
           "upperarm": "28",
           "waist": "46",
           "hips": "50",
+          "trend": true,
           "comment": "",
           "date": "Tue Aug 25 2020 17:43:33 GMT+0000 (Coordinated Universal Time)"
         }

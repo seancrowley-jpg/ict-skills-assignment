@@ -33,8 +33,8 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
       trend: Boolean,
-      comment: " ",
-      date: Date()
+      comment: "",
+      date: Date.now()
     };
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     response.redirect("/dashboard");
