@@ -36,8 +36,8 @@ const memberStore = {
   },
   
   getAssessment(id, assessmentid) {
-    const member = this.store.findOneBy(this.collection, { id: id });
-    const assessments = member.assessments.filter(assessment => assessment.id == assessmentid);
+    const assessments = this.getUserAssessments(id);
+    const assessment = assessments.filter(assessment => assessment.assessmentid == assessmentid);
     return assessments;
   },
   
@@ -74,7 +74,7 @@ const memberStore = {
   editComment(assessment,comment)
   {
     assessment.comment = comment;
-    
+    logger.info("Comment = ",comment)
     this.store.save()
   }
 };
