@@ -23,15 +23,16 @@ const trainerdashboard = {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
+    const assessments = member.assessments
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
-      assessments: memberStore.getUserAssessments(memberId),
+      assessments: assessments,
       analytics: memberStats
     }
     logger.info("about to render")
-    logger.info(memberId)
+    logger.info(assessments);
     response.render("trainerassessment", viewData)
   },
   
@@ -47,12 +48,12 @@ const trainerdashboard = {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
-    const assessment = memberStore.getAssessment(memberId,assessmentId)
-    logger.info("Assessment",assessment)
+    //const assessment = memberStore.getAssessment(memberId,assessmentId)
+    //logger.info("Assessment",assessment)
     const comment = request.body.comment;
     logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
     logger.info("Comment = ",comment)
-    memberStore.editComment(assessment,comment);
+    memberStore.editComment(assessmentId,comment);
     response.redirect("/trainerdashboard");
   },
 };

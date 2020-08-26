@@ -71,8 +71,9 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(assessment,comment)
+  editComment(assessmentId,comment)
   {
+    const assessment = this.getAssessment(assessmentId)
     assessment.comment = comment;
     logger.info("Comment =",comment)
     this.store.save()
