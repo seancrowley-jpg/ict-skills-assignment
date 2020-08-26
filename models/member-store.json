@@ -36,19 +36,7 @@
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
         {
-          "assessmentid": "c7671170-e7bc-11ea-8c3e-138ccb318d4b",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "90",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
-          "comment": "?",
-          "date": "Wed, 26 Aug 2020 16:54:17 GMT"
-        },
-        {
-          "assessmentid": "9e5ffc60-e7bc-11ea-a1c0-63817b20be3a",
+          "assessmentid": "50b2f790-e7be-11ea-b16b-a9e505ae5e27",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
           "weight": "88",
           "chest": "",
@@ -57,10 +45,10 @@
           "waist": "",
           "hips": "",
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 16:53:08 GMT"
+          "date": "Wed, 26 Aug 2020 17:05:17 GMT"
         },
         {
-          "assessmentid": "81d85dd0-e7bc-11ea-86d9-c5e9167e7784",
+          "assessmentid": "19313840-e7be-11ea-8be7-efc1a16aba3f",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
           "weight": "80",
           "chest": "",
@@ -69,7 +57,19 @@
           "waist": "",
           "hips": "",
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 16:52:20 GMT"
+          "date": "Wed, 26 Aug 2020 17:03:44 GMT"
+        },
+        {
+          "assessmentid": "09563ab0-e7be-11ea-8be7-efc1a16aba3f",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": "75",
+          "chest": "",
+          "thigh": "",
+          "upperarm": "",
+          "waist": "",
+          "hips": "",
+          "comment": "?",
+          "date": "Wed, 26 Aug 2020 17:03:17 GMT"
         }
       ]
     }
