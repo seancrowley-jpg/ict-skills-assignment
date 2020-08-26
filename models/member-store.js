@@ -37,8 +37,8 @@ const memberStore = {
   
   getAssessment(id,assessmentid) {
     const member = this.getMember(id);
-    const assessment = member.assessments.filter(assessment => assessment.id == assessmentid)
-    return assessment[0];
+    const assessment = this.store.findOneBy(this.collection, { assessmentid: assessmentid });
+    return assessment;
   },
   
   getUserAssessments(userid) {

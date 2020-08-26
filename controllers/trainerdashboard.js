@@ -10,6 +10,7 @@ const trainerdashboard = {
   index (request, response) {
     logger.info("Trainer Dashboard rendering");
     const members = memberStore.getAllMembers();
+    const assessmentId = request.params.assessmentid;
     const viewData = {
       member: members,
     };
@@ -21,10 +22,12 @@ const trainerdashboard = {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+    //const assessmentId = request.params.assessmentid;
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
+      assessment: memberStore.getUserAssessments(memberId),
       analytics: memberStats
     }
     logger.info("about to render")
@@ -44,9 +47,10 @@ const trainerdashboard = {
     const memberId = request.params.id;
     const assessmentId = request.params.assessmentid;
     const assessment = memberStore.getAssessment(memberId, assessmentId)
+    logger.info("Assessment",assessment)
     const comment = request.body.comment;
     logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
-    memberStore.editComment(memberId,assessmentId,comment);
+    memberStore.editComment(assessment,comment);
     response.redirect("/trainerassessment");
     
   }
