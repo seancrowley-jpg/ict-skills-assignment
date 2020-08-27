@@ -25,7 +25,8 @@ router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/trainerassessment/:id", trainerdashboard.trainerAssessment);
 router.get("/trainerdashboard/deletemember/:id", trainerdashboard.deleteMember);
 
-router.get("/comment/:id/editcomment/:assessmentid}}", comment.index);
+router.get("/comment/:id/editcomment/:assessmentid", comment.index);
+router.post("/comment/:id/addcomment/:assessmentid", comment.updateComment);
 
 
 

@@ -1,6 +1,6 @@
-{{> menu id="dashboard"}}
+{{> trainermenu id =""}}
 
-<form class="ui form" action="/trainerassessment/{{assessmentid}}/addcomment" method="POST">
+<form class="ui form" action="/comment/{{id}}/addcomment/{{assessmentid}}" method="POST">
   <div class="ui field">
     <textarea rows="2" name="comment"> {{member.assessment.comment}} </textarea>
   </div>
