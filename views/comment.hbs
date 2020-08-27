@@ -1,8 +1,3 @@
 {{> trainermenu id =""}}
 
-<form class="ui form" action="/comment/{{id}}/addcomment/{{assessmentid}}" method="POST">
-  <div class="ui field">
-    <textarea rows="2" name="comment"> {{member.assessment.comment}} </textarea>
-  </div>
-  <button class="ui blue submit button"> Update </button>
-</form>
+{{> addcomment}}

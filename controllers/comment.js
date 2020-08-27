@@ -10,14 +10,15 @@ const comment = {
   index(request,response)
   {
     const memberId = request.params.id
+    const member = memberStore.getMember(memberId)
     const assessmentId = request.params.assessmentid
     logger.debug(`Editing assessment ${assessmentId} from Member ${memberId}`);
     const viewData = {
-      member: memberStore.getMember(memberId),
-      assessment: memberStore.getAssessment(memberId,assessmentId)
+      member: member,
+      assessment: member.assessments
     };
     logger.info(viewData)
-    response.render("comment")
+    response.render("comment",viewData)
   },
   
   updateComment(request, response)
