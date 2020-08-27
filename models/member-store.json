@@ -36,40 +36,52 @@
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "assessments": [
         {
-          "assessmentid": "50b2f790-e7be-11ea-b16b-a9e505ae5e27",
+          "assessmentid": "6af20240-e859-11ea-a4e5-25dfd76b8311",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "88",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
+          "weight": 100,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 17:05:17 GMT"
+          "date": "Thu, 27 Aug 2020 11:35:33 GMT"
         },
         {
-          "assessmentid": "19313840-e7be-11ea-8be7-efc1a16aba3f",
+          "assessmentid": "670dc330-e859-11ea-a4e5-25dfd76b8311",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "80",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
+          "weight": 99,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 17:03:44 GMT"
+          "date": "Thu, 27 Aug 2020 11:35:26 GMT"
         },
         {
-          "assessmentid": "09563ab0-e7be-11ea-8be7-efc1a16aba3f",
+          "assessmentid": "62e26900-e859-11ea-a4e5-25dfd76b8311",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": "75",
-          "chest": "",
-          "thigh": "",
-          "upperarm": "",
-          "waist": "",
-          "hips": "",
+          "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
           "comment": "?",
-          "date": "Wed, 26 Aug 2020 17:03:17 GMT"
+          "date": "Thu, 27 Aug 2020 11:35:19 GMT"
+        },
+        {
+          "assessmentid": "5cb3c4c0-e859-11ea-a4e5-25dfd76b8311",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 90,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 11:35:09 GMT"
         }
       ]
     }

@@ -27,13 +27,13 @@ const dashboard = {
     let newAssessment = {
       assessmentid: uuid.v1(),
       userid: loggedInUser.id,
-      weight: request.body.weight,
-      chest: request.body.chest,
-      thigh: request.body.thigh,
-      upperarm: request.body.upperarm,
-      waist: request.body.waist,
-      hips: request.body.hips,
-      trend: true,
+      weight: Number(request.body.weight),
+      chest: Number(request.body.chest),
+      thigh: Number(request.body.thigh),
+      upperarm: Number(request.body.upperarm),
+      waist: Number(request.body.waist),
+      hips: Number(request.body.hips),
+      trend: undefined,
       comment: "?",
       date: today.toGMTString()
     };
