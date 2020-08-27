@@ -77,6 +77,14 @@ const memberStore = {
     assessment.comment = comment;
     logger.info("Comment =",comment)
     this.store.save()
+  },
+  
+  trend(id)
+  {
+    const member = this.getMember(id);
+    if (member.assessments.length >1) {
+      memberStats.trend = member.assessments[1].weight > member.assessments[0].weight;
+    }
   }
 };
 
