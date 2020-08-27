@@ -35,13 +35,6 @@ const memberStore = {
     this.store.save();
   },
   
-  /*
-  getAssessment(userid,assessmentid) {
-    const assessments = this.getUserAssessments(userid);
-    const assessment = assessments.filter(assessment => assessment.id == assessmentid);
-    return assessment;
-  },
-  */
   
   getAssessment(id, assessmentId) {
     const member = this.store.findOneBy(this.collection, { id: id });
@@ -49,12 +42,6 @@ const memberStore = {
     return assessments[0];
   },
   
-  /*
-  getAssessment(id,assessmentid)
-  {
-    
-  },
-  */
   
   getUserAssessments(userid) {
     return this.store.findBy(this.collection, { userid: userid });
@@ -94,17 +81,7 @@ const memberStore = {
     this.store.save()
   },
   
-  /*
-  trend(id)
-  {
-    const member = this.getMember(id);
-    let trend = member.assessments.trend;
-    if (member.assessments.length >1) {
-      trend = member.assessments[1].weight > member.assessments[0].weight;
-    }
-    return trend;
-  }
-  */
+
 };
 
 
