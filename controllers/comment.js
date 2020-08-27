@@ -29,7 +29,7 @@ const comment = {
     const comment = request.body.comment;
     logger.info("Comment = ",comment)
     memberStore.editComment(memberId,assessmentId,comment);
-    response.redirect("/trainerassessment/:id");
+    response.redirect("/trainerdashboard");
   },
 };
 
