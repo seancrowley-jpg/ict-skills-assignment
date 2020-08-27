@@ -18,6 +18,13 @@ const trainerdashboard = {
     response.render("trainerdashboard", viewData)
   },
   
+  deleteMember(request, response) {
+    logger.info("Deleteing Member")
+    const memberId = request.params.id;
+    memberStore.deleteMember(memberId);
+    response.redirect("/trainerdashboard")
+  },
+  
   trainerAssessment(request, response) {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
@@ -36,24 +43,16 @@ const trainerdashboard = {
     response.render("trainerassessment", viewData)
   },
   
-  deleteMember(request, response) {
-    logger.info("Deleteing Member")
-    const memberId = request.params.id;
-    memberStore.deleteMember(memberId);
-    response.redirect("/trainerdashboard")
-  },
-  
-  updateComment(request,response)
+  updateComment(request, response)
   {
-    const memberId = request.params.id;
-    const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
+    const userId =request.params.userid;
     //const assessment = memberStore.getAssessment(memberId,assessmentId)
     //logger.info("Assessment",assessment)
     const comment = request.body.comment;
     logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
     logger.info("Comment = ",comment)
-    memberStore.editComment(member.id,assessmentId,comment);
+    memberStore.editComment(userId,assessmentId,comment);
     response.redirect("/trainerdashboard");
   },
 };
