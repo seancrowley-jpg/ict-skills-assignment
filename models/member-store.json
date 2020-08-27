@@ -20,7 +20,7 @@
           "waist": 0,
           "hips": 0,
           "trend": true,
-          "comment": "?",
+          "comment": "  test",
           "date": "Thu, 27 Aug 2020 14:22:17 GMT"
         },
         {
@@ -71,7 +71,7 @@
           "waist": 0,
           "hips": 0,
           "trend": true,
-          "comment": "?",
+          "comment": "  test",
           "date": "Thu, 27 Aug 2020 11:57:30 GMT"
         },
         {
@@ -84,7 +84,7 @@
           "waist": 0,
           "hips": 0,
           "trend": false,
-          "comment": "?",
+          "comment": "  Test",
           "date": "Thu, 27 Aug 2020 11:57:23 GMT"
         }
       ]
