@@ -29,13 +29,19 @@ const trainerdashboard = {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+<<<<<<< HEAD
     const assessmentId = request.params.assessmentid;
     const assessments = member.assessments
+=======
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
+<<<<<<< HEAD
       assessments: assessments,
+=======
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
       analytics: memberStats
     }
     logger.info("about to render")
