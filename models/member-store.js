@@ -82,9 +82,14 @@ const memberStore = {
   trend(id)
   {
     const member = this.getMember(id);
-    if (member.assessments.length >1) {
-      memberStats.trend = member.assessments[1].weight > member.assessments[0].weight;
-    }
+    let trend = member.assessments.trend;
+    if(member.assessments.length > 1)
+      {
+        if(member.assessments[1].weight > member.assessments[0].weight)
+          trend = true;
+        else
+          trend = false;
+      }
   }
 };
 

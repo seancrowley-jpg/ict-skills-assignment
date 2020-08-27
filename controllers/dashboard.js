@@ -37,11 +37,11 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      trend: Boolean(memberStats.trend),
+      trend: ,
       comment: "?",
       date: today.toGMTString()
     };
-    //newAssessment.trend = memberStats.trend
+    newAssessment.trend = memberStore.trend(loggedInUser.id);
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     logger.info(newAssessment)
     response.redirect("/dashboard");
