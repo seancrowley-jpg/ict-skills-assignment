@@ -47,47 +47,7 @@
       "height": "2.0",
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-      "assessments": [
-        {
-          "assessmentid": "516d2820-e874-11ea-b973-a3b4349e8b8e",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 55,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "trend": false,
-          "comment": "",
-          "date": "Thu, 27 Aug 2020 14:48:06 GMT"
-        },
-        {
-          "assessmentid": "7c0fd8b0-e85c-11ea-a063-41d32751d3c0",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 88,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "trend": true,
-          "comment": "  test",
-          "date": "Thu, 27 Aug 2020 11:57:30 GMT"
-        },
-        {
-          "assessmentid": "78155280-e85c-11ea-a063-41d32751d3c0",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 77,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "trend": false,
-          "comment": "  Test",
-          "date": "Thu, 27 Aug 2020 11:57:23 GMT"
-        }
-      ]
+      "assessments": []
     }
   ]
 }

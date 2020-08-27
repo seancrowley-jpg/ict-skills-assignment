@@ -37,9 +37,11 @@
         <td>
           {{hips}}
         </td>
-        <td>
-          {{trend}}
-        </td>
+        {{#if trend}}
+        <i class="green chevron up icon"></i>
+        {{else}}
+        <i class="red chevron down icon"></i>
+        {{/if}}
         <td>
           {{comment}}
         </td>
