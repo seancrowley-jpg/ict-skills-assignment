@@ -15,9 +15,9 @@ const comment = {
     logger.debug(`Editing assessment ${assessmentId} from Member ${memberId}`);
     const viewData = {
       member: member,
-      assessment: member.assessments
+      assessment: memberStore.getAssessment(member.id,assessmentId)
     };
-    logger.info(assessmentId);
+    logger.info(viewData);
     response.render("comment",viewData)
   },
   
