@@ -11,10 +11,12 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     var memberStats = analytics.generateMemberStats(loggedInUser);
+    const assessments = loggedInUser.assessments;
     const viewData = {
       title: "Dashboard",
       member: loggedInUser,
-      analytics: memberStats
+      analytics: memberStats,
+      assessment: assessments
     };
     logger.info('about to render')
     logger.info(memberStats);
