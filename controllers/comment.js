@@ -33,3 +33,5 @@ const comment = {
     response.redirect("/trainerdashboard");
   },
 };
+
+module.exports = comment;
