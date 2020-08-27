@@ -9,7 +9,112 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-      "assessments": []
+      "assessments": [
+        {
+          "assessmentid": "54526a90-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 86,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:33 GMT"
+        },
+        {
+          "assessmentid": "52776900-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 86,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:30 GMT"
+        },
+        {
+          "assessmentid": "4f8c2ff0-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 85,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:25 GMT"
+        },
+        {
+          "assessmentid": "4e0086e0-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:23 GMT"
+        },
+        {
+          "assessmentid": "4ba49580-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 81,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:19 GMT"
+        },
+        {
+          "assessmentid": "485c4850-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 82,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:13 GMT"
+        },
+        {
+          "assessmentid": "460e39a0-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 88,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:09 GMT"
+        },
+        {
+          "assessmentid": "41995350-e870-11ea-8928-476bf93f1b10",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 14:19:02 GMT"
+        }
+      ]
     },
     {
       "email": "homer@simpson.com",
