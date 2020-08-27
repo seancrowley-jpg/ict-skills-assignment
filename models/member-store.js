@@ -35,10 +35,18 @@ const memberStore = {
     this.store.save();
   },
   
+  /*
   getAssessment(userid,assessmentid) {
     const assessments = this.getUserAssessments(userid);
     const assessment = assessments.filter(assessment => assessment.id == assessmentid);
     return assessment;
+  },
+  */
+  
+  getAssessment(id, assessmentId) {
+    const member = this.store.findOneBy(this.collection, { id: id });
+    const assessments = member.assessments.filter(assessment => assessment.id == assessmentId);
+    return assessments[0];
   },
   
   getUserAssessments(userid) {
