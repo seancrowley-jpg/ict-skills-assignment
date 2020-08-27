@@ -16,10 +16,11 @@ const dashboard = {
       title: "Dashboard",
       member: loggedInUser,
       analytics: memberStats,
-      assessment: assessments
+      assessments: assessments
     };
     logger.info('about to render')
     logger.info(memberStats);
+    assessments.reverse();
     response.render("dashboard", viewData);
   },
   

@@ -17,7 +17,7 @@ var analytics = {
     memberStats.trend = true;
     if(member.assessments.length > 1)
       {
-        memberStats.trend = member.assessments[1].weight < member.assessments[0].weight;
+        memberStats.trend = member.assessments[member.assessments.length -2].weight > member.assessments[member.assessments.length - 1].weight;
       }
     return memberStats;
   },

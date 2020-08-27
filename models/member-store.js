@@ -47,7 +47,7 @@ const memberStore = {
   
   addAssessment(id, assessment) {
     const member = this.getMember(id);
-    member.assessments.splice(0,0,assessment);
+    member.assessments.push(assessment);
     this.store.save();
   },
   
