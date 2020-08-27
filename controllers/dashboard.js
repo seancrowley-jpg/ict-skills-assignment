@@ -38,7 +38,7 @@ const dashboard = {
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
       trend: memberStats.trend,
-      comment: ,
+      comment: "",
       date: today.toGMTString()
     };
     //newAssessment.trend = memberStore.trend(loggedInUser.id);

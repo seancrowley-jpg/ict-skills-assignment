@@ -43,18 +43,21 @@ const trainerdashboard = {
     response.render("trainerassessment", viewData)
   },
   
+  /*
   updateComment(request, response)
   {
     const assessmentId = request.params.assessmentid;
     const userId =request.params.userid;
+    const member = memberStore.getMember(userId);
     //const assessment = memberStore.getAssessment(memberId,assessmentId)
     //logger.info("Assessment",assessment)
     const comment = request.body.comment;
-    logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
+    //logger.debug("Updating Comment ${assessmentId} from Member ${memberId}");
     logger.info("Comment = ",comment)
-    memberStore.editComment(userId,assessmentId,comment);
+    memberStore.editComment(assessmentId,comment);
     response.redirect("/trainerdashboard");
   },
+  */
 };
 
 
