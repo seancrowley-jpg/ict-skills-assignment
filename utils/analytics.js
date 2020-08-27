@@ -14,14 +14,18 @@ var analytics = {
     memberStats.bmi = this.calculateBMI(member,weight);
     memberStats.bmicategory = this.determineBMICategory(memberStats.bmi);
     memberStats.isidealbodyweight = this.isIdealBodyWeight(member,weight);
-    //memberStats.trend = undefined;
-    if(member.assessments.length > 1)
+    memberStats.trend = true;
+    /*if(member.assessments.length > 1)
       {
         if(member.assessments[1].weight < member.assessments[0].weight)
           memberStats.trend = true;
         else
           memberStats.trend = false;
       }
+      */
+    if (member.assessments.length >1) {
+      memberStats.trend = member.assessments[1].weight > member.assessments[0].weight;
+    }
     return memberStats;
   },
   
