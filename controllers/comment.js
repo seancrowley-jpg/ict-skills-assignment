@@ -17,7 +17,7 @@ const comment = {
       member: member,
       assessment: member.assessments
     };
-    logger.info(viewData)
+    logger.info(assessmentId);
     response.render("comment",viewData)
   },
   

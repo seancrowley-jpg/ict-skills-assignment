@@ -49,6 +49,13 @@ const memberStore = {
     return assessments[0];
   },
   
+  /*
+  getAssessment(id,assessmentid)
+  {
+    
+  },
+  */
+  
   getUserAssessments(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
