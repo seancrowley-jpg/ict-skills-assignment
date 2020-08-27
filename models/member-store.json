@@ -9,7 +9,47 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-      "assessments": []
+      "assessments": [
+        {
+          "assessmentid": "5d8a62c0-e866-11ea-aa6b-4975080d1c7a",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 95,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 13:08:14 GMT"
+        },
+        {
+          "assessmentid": "59807340-e866-11ea-aa6b-4975080d1c7a",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 90,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 13:08:07 GMT"
+        },
+        {
+          "assessmentid": "57c3cf20-e866-11ea-aa6b-4975080d1c7a",
+          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+          "weight": 100,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "?",
+          "date": "Thu, 27 Aug 2020 13:08:04 GMT"
+        }
+      ]
     },
     {
       "email": "homer@simpson.com",

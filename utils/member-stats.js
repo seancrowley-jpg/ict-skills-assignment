@@ -1,6 +1,6 @@
 "use strict";
 
-let memberStats = {
+const memberStats = {
   bmi: undefined,
   bmicategory: undefined,
   isidealbodyweight: undefined,
