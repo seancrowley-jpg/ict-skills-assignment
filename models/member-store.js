@@ -36,9 +36,8 @@ const memberStore = {
   },
   
   getAssessment(id, assessmentid) {
-    const assessments = this.getUserAssessments(id);
-    const assessment = assessments.filter(assessment => assessment.assessmentid == assessmentid);
-    return assessments;
+    const member = this.getMember(id);
+    const assessment = member.assessments.filter(assessment => assessment.id == assessmentid);
   },
   
   getUserAssessments(userid) {
@@ -71,9 +70,10 @@ const memberStore = {
     this.store.save();
   },
   
-  editComment(assessmentId,comment)
+  editComment(id,assessmentId,comment)
   {
-    const assessment = this.getAssessment(assessmentId)
+    const member = this.getMember(id);
+    const assessment = this.getAssessment(id,assessmentId)
     assessment.comment = comment;
     logger.info("Comment =",comment)
     this.store.save()

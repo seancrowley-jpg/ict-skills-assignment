@@ -5,7 +5,7 @@ var analytics = {
   
   generateMemberStats(member)
   {
-    const memberStats = require("../utils/member-stats.js")
+    let memberStats = require("../utils/member-stats.js")
     let weight = member.startingweight;
     if(member.assessments.length > 0)
       {

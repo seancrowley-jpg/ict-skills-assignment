@@ -1,10 +1,10 @@
 "use strict";
 
-const memberStats = {
+let memberStats = {
   bmi: undefined,
   bmicategory: undefined,
   isidealbodyweight: undefined,
-  //trend: undefined,
+  trend: undefined,
 }
 
 module.exports = memberStats;
