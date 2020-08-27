@@ -1,10 +1,10 @@
 "use strict";
 
-var memberStats = {
+let memberStats = {
   bmi: undefined,
   bmicategory: undefined,
   isidealbodyweight: undefined,
-  trend: undefined,
+  trend: false,
 }
 
 module.exports = memberStats;
