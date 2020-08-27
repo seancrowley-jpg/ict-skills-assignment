@@ -44,12 +44,9 @@
           {{comment}}
         </td>
         <td>
-          <form class="ui form" action="/trainerassessment/{{assessmentid}}/addcomment" method="POST">
-            <div class="ui field">
-              <textarea rows="2" name="comment"> {{comment}} </textarea>
-            </div>
-            <button class="ui blue submit button"> Update </button>
-          </form>
+          <a href="/comment/{{../member.id}}/editcomment/{{assessmentid}}" class="ui icon button">
+            <i class="pencil alternate icon"></i>
+          </a>
         </td>
       </tr>
     {{/each}}
