@@ -9,44 +9,7 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-      "assessments": [
-        {
-          "assessmentid": "e484c580-e86c-11ea-9e6f-855383edac1d",
-          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-          "weight": 80,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "comment": "?",
-          "date": "Thu, 27 Aug 2020 13:54:57 GMT"
-        },
-        {
-          "assessmentid": "e2c22df0-e86c-11ea-9e6f-855383edac1d",
-          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-          "weight": 90,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "comment": "?",
-          "date": "Thu, 27 Aug 2020 13:54:54 GMT"
-        },
-        {
-          "assessmentid": "e0800620-e86c-11ea-9e6f-855383edac1d",
-          "userid": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
-          "weight": 100,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "comment": "?",
-          "date": "Thu, 27 Aug 2020 13:54:50 GMT"
-        }
-      ]
+      "assessments": []
     },
     {
       "email": "homer@simpson.com",

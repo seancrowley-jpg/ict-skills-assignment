@@ -79,18 +79,17 @@ const memberStore = {
     this.store.save()
   },
   
+  /*
   trend(id)
   {
     const member = this.getMember(id);
     let trend = member.assessments.trend;
-    if(member.assessments.length > 1)
-      {
-        if(member.assessments[1].weight > member.assessments[0].weight)
-          trend = true;
-        else
-          trend = false;
-      }
+    if (member.assessments.length >1) {
+      trend = member.assessments[1].weight > member.assessments[0].weight;
+    }
+    return trend;
   }
+  */
 };
 
 
