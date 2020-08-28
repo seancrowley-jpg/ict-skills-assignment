@@ -1,13 +1,15 @@
 
-<div class="ui calendar" id="date_calendar">
+<form class="ui calendar form" id="date_calendar">
   <div class="ui input left icon">
     <i class="calendar icon"></i>
     <input type="text" placeholder="Date">
-  </div>
+  </form>
 </div>
 
 <script>
-  $('#standard_calendar')
-  .calendar()
+$('#date_calendar')
+  .calendar({
+    type: 'date'
+  })
 ;
 </script>
