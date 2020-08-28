@@ -10,7 +10,7 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    var memberStats = analytics.generateMemberStats(loggedInUser);
+    const memberStats = analytics.generateMemberStats(loggedInUser);
     const assessments = loggedInUser.assessments;
     const viewData = {
       title: "Dashboard",
@@ -26,7 +26,7 @@ const dashboard = {
   
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    var memberStats = analytics.generateMemberStats(loggedInUser);
+    const memberStats = analytics.generateMemberStats(loggedInUser);
     const today = new Date();
     const newAssessment = {
       assessmentid: uuid.v1(),
@@ -41,7 +41,7 @@ const dashboard = {
       comment: "",
       date: today.toGMTString()
     };
-    newAssessment.trend = memberStore.trend(loggedInUser)
+    //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     //logger.info(memberStore.trend);
     logger.info(newAssessment)
