@@ -37,7 +37,7 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      //trend: memberStats.trend,
+      trend: memberStats.trend,
       comment: "",
       date: today.toGMTString()
     };
