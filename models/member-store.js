@@ -83,10 +83,11 @@ const memberStore = {
   
   trend(member)
   {
+    let trend = true;
     if (member.assessments.length >1) {
-      memberStats.trend = member.assessments[1].weight > member.assessments[0].weight;
+      trend = member.assessments[1].weight > member.assessments[0].weight;
     }
-    
+    return trend;
   }
 
 };

@@ -41,9 +41,9 @@ const dashboard = {
       comment: "",
       date: today.toGMTString()
     };
-    newAssessment.trend = memberStats.trend;
+    newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
-    //logger.info(memberStats);
+    //logger.info(memberStore.trend);
     logger.info(newAssessment)
     response.redirect("/dashboard");
   },
