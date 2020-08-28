@@ -27,6 +27,7 @@ const dashboard = {
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
     let memberStats = analytics.generateMemberStats(loggedInUser)
+        let ass = require("../utils/member-stats.js")
     const today = new Date();
     let newAssessment = {
       assessmentid: uuid.v1(),
