@@ -81,6 +81,11 @@ const memberStore = {
     this.store.save()
   },
   
+  trend(member)
+  {
+    
+    
+  }
 
 };
 
