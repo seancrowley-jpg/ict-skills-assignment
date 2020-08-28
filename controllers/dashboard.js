@@ -26,7 +26,7 @@ const dashboard = {
   
   addAssessment(request,response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    let memberStats = analytics.generateMemberStats(loggedInUser)
+    const memberStats = analytics.generateMemberStats(loggedInUser)
     const today = new Date();
     let newAssessment = {
       assessmentid: uuid.v1(),
@@ -41,7 +41,7 @@ const dashboard = {
       comment: "",
       date: today.toGMTString()
     };
-    //newAssessment.trend === memberStats.trend;
+    newAssessment.trend === memberStats.trend;
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     logger.info(newAssessment)
     response.redirect("/dashboard");

@@ -5,7 +5,7 @@ var analytics = {
   
   generateMemberStats(member)
   {
-    let memberStats = require("../utils/member-stats.js")
+    const memberStats = require("../utils/member-stats.js")
     let weight = member.startingweight;
     if(member.assessments.length > 0)
       {
@@ -14,20 +14,11 @@ var analytics = {
     memberStats.bmi = this.calculateBMI(member,weight);
     memberStats.bmicategory = this.determineBMICategory(memberStats.bmi);
     memberStats.isidealbodyweight = this.isIdealBodyWeight(member,weight);
-    //memberStats.trend = true;
-    /*if(member.assessments.length > 1)
-      {
-        if(member.assessments[1].weight < member.assessments[0].weight)
-          memberStats.trend = true;
-        else
-          memberStats.trend = false;
-      }
-      */
+    memberStats.trend =  true;
     
     if (member.assessments.length >1) {
       memberStats.trend = member.assessments[1].weight > member.assessments[0].weight;
     }
-    
     
     return memberStats;
   },
