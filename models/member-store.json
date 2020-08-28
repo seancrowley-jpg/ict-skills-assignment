@@ -47,7 +47,21 @@
       "height": "2.0",
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-      "assessments": []
+      "assessments": [
+        {
+          "assessmentid": "cca7f700-e940-11ea-8194-f7e0f7c02f1b",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 100,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "Fri, 28 Aug 2020 15:11:50 GMT"
+        }
+      ]
     }
   ]
 }
