@@ -28,7 +28,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     var memberStats = analytics.generateMemberStats(loggedInUser);
     const today = new Date();
-    let newAssessment = {
+    const newAssessment = {
       assessmentid: uuid.v1(),
       userid: loggedInUser.id,
       weight: Number(request.body.weight),
@@ -37,12 +37,13 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      trend: memberStats.trend,
+      //trend: memberStats.trend,
       comment: "",
       date: today.toGMTString()
     };
+    newAssessment.trend = memberStats.trend;
     memberStore.addAssessment(loggedInUser.id,newAssessment);
-    logger.info(memberStats);
+    //logger.info(memberStats);
     logger.info(newAssessment)
     response.redirect("/dashboard");
   },
