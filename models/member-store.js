@@ -80,7 +80,7 @@ const memberStore = {
     logger.info("Comment =",comment)
     this.store.save()
   },
-  
+  /*
   trend(member)
   {
     let trend = true;
@@ -89,7 +89,12 @@ const memberStore = {
     }
     return trend;
   }
-
+  */
+  
+  setGoal(id,goal){
+    const member = this.getMember(id);
+    member.goal.splice(0,1,goal)
+  }
 };
 
 

@@ -53,7 +53,8 @@ const dashboard = {
     const assessmentId = request.params.assessmentid;
     memberStore.deleteAssessment(member.id, assessmentId);
     response.redirect("/dashboard");
-  }
+  },
+  
 };
 
 
