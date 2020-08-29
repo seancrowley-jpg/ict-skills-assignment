@@ -57,8 +57,9 @@ const dashboard = {
   
   setGoal(request, response) {
     const member = accounts.getCurrentUser(request);
-    const goal = {
-      date: Date(request.body.date),
+    const today = new Date();
+    let goal = {
+      date: today.toGMTString(request.body.date),
       weight: Number(request.body.weight),
       chest: Number(request.body.chest),
       thigh: Number(request.body.thigh),
@@ -67,7 +68,7 @@ const dashboard = {
       hips: Number(request.body.hips),
     }
     memberStore.setGoal(member.id,goal);
-    logger.info("Setting Goal = ",goal);
+    logger.info(member.goal);
     response.redirect("/dashboard");
   }
   

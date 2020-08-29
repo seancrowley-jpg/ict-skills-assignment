@@ -49,13 +49,13 @@
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "goal": {
-        "date": "Sat Aug 29 2020 16:52:28 GMT+0000 (Coordinated Universal Time)",
-        "weight": 50,
-        "chest": 35,
-        "thigh": 40,
-        "upperarm": 22,
-        "waist": 41,
-        "hips": 49
+        "date": "Sat, 29 Aug 2020 16:57:11 GMT",
+        "weight": 0,
+        "chest": 0,
+        "thigh": 0,
+        "upperarm": 0,
+        "waist": 0,
+        "hips": 0
       },
       "assessments": [
         {
