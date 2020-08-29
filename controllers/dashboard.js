@@ -39,7 +39,7 @@ const dashboard = {
       hips: Number(request.body.hips),
       trend: memberStats.trend,
       comment: "",
-      date: today.toGMTString()
+      date: today.toDateString()
     };
     //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
@@ -59,7 +59,7 @@ const dashboard = {
     const member = accounts.getCurrentUser(request);
     const today = new Date();
     let goal = {
-      date: today.toGMTString(request.body.date),
+      date: today.toDateString(request.body.date),
       weight: Number(request.body.weight),
       chest: Number(request.body.chest),
       thigh: Number(request.body.thigh),
@@ -71,7 +71,6 @@ const dashboard = {
     logger.info(member.goal);
     response.redirect("/dashboard");
   }
-  
 };
 
 
