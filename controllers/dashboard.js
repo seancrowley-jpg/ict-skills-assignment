@@ -44,7 +44,7 @@ const dashboard = {
     //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     //logger.info(memberStore.trend);
-    logger.info(newAssessment)
+    //logger.info(newAssessment)
     response.redirect("/dashboard");
   },
   
@@ -55,7 +55,21 @@ const dashboard = {
     response.redirect("/dashboard");
   },
   
-  
+  setGoal(request, response) {
+    const member = accounts.getCurrentUser(request);
+    const goal = {
+      date: Date(request.body.date),
+      weight: Number(request.body.weight),
+      chest: Number(request.body.chest),
+      thigh: Number(request.body.thigh),
+      upperarm: Number(request.body.upperarm),
+      waist: Number(request.body.waist),
+      hips: Number(request.body.hips),
+    }
+    memberStore.setGoal(member.id,goal);
+    logger.info("Setting Goal = ",goal);
+    response.redirect("/dashboard");
+  }
   
 };
 

@@ -18,8 +18,10 @@ router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
 router.get("/dashboard", dashboard.index);
-router.post("/dashboard/addassessment", dashboard.addAssessment);
 router.get("/dashboard/deleteassessment/:assessmentid", dashboard.deleteAssessment);
+router.post("/dashboard/addassessment", dashboard.addAssessment);
+router.post("/dashboard/setgoal", dashboard.setGoal);
+
 
 router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/trainerassessment/:id", trainerdashboard.trainerAssessment);
@@ -27,7 +29,6 @@ router.get("/trainerdashboard/deletemember/:id", trainerdashboard.deleteMember);
 
 router.get("/comment/:id/editcomment/:assessmentid", comment.index);
 router.post("/comment/:id/addcomment/:assessmentid", comment.updateComment);
-
 
 
 router.get('/settings', settings.index);

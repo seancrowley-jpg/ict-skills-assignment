@@ -94,7 +94,7 @@ const memberStore = {
   setGoal(id,goal){
     const member = this.getMember(id);
     member.goal = goal;
-    this.store.save
+    this.store.save();
   }
 };
 
