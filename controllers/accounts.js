@@ -43,8 +43,8 @@ const accounts = {
       height: request.body.height,
       startingweight: request.body.startingweight,
       id: uuid.v1(),
+      goal:{},
       assessments: [],
-      goal: []
     }
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);

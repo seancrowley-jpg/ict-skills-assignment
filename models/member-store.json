@@ -9,6 +9,7 @@
       "height": "1.5",
       "startingweight": "70",
       "id": "6ae4f840-e2da-11ea-8012-adb99a921cdf",
+      "goal": {},
       "assessments": [
         {
           "assessmentid": "b62e24c0-e870-11ea-bc5c-ab446861b28d",
@@ -37,6 +38,7 @@
           "date": "Thu, 27 Aug 2020 14:22:13 GMT"
         }
       ]
+      
     },
     {
       "email": "homer@simpson.com",
@@ -47,6 +49,7 @@
       "height": "2.0",
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+      "goal": {},
       "assessments": [
         {
           "assessmentid": "cca7f700-e940-11ea-8194-f7e0f7c02f1b",

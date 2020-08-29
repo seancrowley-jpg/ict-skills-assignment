@@ -93,7 +93,8 @@ const memberStore = {
   
   setGoal(id,goal){
     const member = this.getMember(id);
-    member.goal.splice(0,1,goal)
+    member.goal = goal;
+    this.store.save
   }
 };
 
