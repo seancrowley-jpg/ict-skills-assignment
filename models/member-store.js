@@ -124,6 +124,7 @@ const memberStore = {
           status = ("Achieved")
           return status;
         }
+    logger.info(date)
   },
 };
 
