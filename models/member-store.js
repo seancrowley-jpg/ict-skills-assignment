@@ -107,15 +107,6 @@ const memberStore = {
       {
         status = ("Missed");
         return status;
-      } else if ((date >= member.assessments[0].date)  && 
-                 (member.assessments[0].weight != goal.weight) && 
-                 (member.assessments[0].chest != goal.chest) && 
-                 (member.assessments[0].thigh != goal.thigh) && 
-                 (member.assessments[0].upperarm != goal.upperarm) &&
-                 (member.assessments[0].waist != goal.waist) &&
-                 (member.assessments[0].hips != goal.hips))  {
-        status = ("Open");
-        return status;
       } else if ((date >= member.assessments[0].date) && 
                  (member.assessments[0].weight == goal.weight) && 
                  (member.assessments[0].chest == goal.chest) && 
@@ -126,7 +117,10 @@ const memberStore = {
       {
         status = ("Achieved");
         return status;
-      } 
+      } else {
+        status = ("Open");
+        return status;
+      }
     logger.info(date)
   },
 };

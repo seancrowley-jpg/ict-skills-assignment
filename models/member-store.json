@@ -49,15 +49,68 @@
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "goal": {
-        "date": "9/2/2020",
+        "date": "8/31/2020",
         "weight": 80,
         "chest": 0,
         "thigh": 0,
         "upperarm": 0,
         "waist": 0,
-        "hips": 0
+        "hips": 0,
+        "status": "Achieved"
       },
       "assessments": [
+        {
+          "assessmentid": "f0d80ad0-eafc-11ea-b039-9b8bc3067aa1",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 0,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "",
+          "date": "8/30/2020"
+        },
+        {
+          "assessmentid": "ebb22400-eafc-11ea-b039-9b8bc3067aa1",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "8/30/2020"
+        },
+        {
+          "assessmentid": "ace37f30-eafc-11ea-8b9e-d79098708822",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 0,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": false,
+          "comment": "",
+          "date": "8/30/2020"
+        },
+        {
+          "assessmentid": "fc911980-eafb-11ea-bb8d-efbef16fdca0",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 89,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "8/30/2020"
+        },
         {
           "assessmentid": "978a3710-eafb-11ea-906d-35df61e199ea",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",

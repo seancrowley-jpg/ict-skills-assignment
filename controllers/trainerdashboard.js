@@ -39,6 +39,8 @@ const trainerdashboard = {
       analytics: memberStats
     }
     logger.info("about to render")
+    
+    goal.status = memberStore.checkGoalStatus(member.id,goal)
     logger.info(assessments);
     response.render("trainerassessment", viewData)
   },
@@ -58,7 +60,7 @@ const trainerdashboard = {
       hips: Number(request.body.hips),
       status: ""
     }
-    goal.status = memberStore.checkGoalStatus(member.id,goal)
+    //goal.status = memberStore.checkGoalStatus(member.id,goal)
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);
     response.redirect("/trainerassessment/" + memberId);

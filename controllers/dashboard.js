@@ -19,6 +19,8 @@ const dashboard = {
       assessments: assessments
     };
     logger.info('about to render')
+    let goal = loggedInUser.goal;
+    goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
     //logger.info(memberStats)
     logger.info(loggedInUser.goal)
     //assessments.reverse();
@@ -67,9 +69,9 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      status: ""
+      status: "",
     }
-    goal.status = memberStore.checkGoalStatus(member.id,goal)
+    //goal.status = memberStore.checkGoalStatus(member.id,goal);
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);
     response.redirect("/dashboard");
