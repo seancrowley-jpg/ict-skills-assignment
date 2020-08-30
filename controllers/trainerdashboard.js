@@ -43,8 +43,10 @@ const trainerdashboard = {
     response.render("trainerassessment", viewData)
   },
   
+  /*
   setGoal(request, response) {
-    const memberId = request.param('id');
+    logger.info("Setting Goal");
+    const memberId = request.params.id;
     const today = new Date();
     let goal = {
       date: today.toDateString(request.body.date),
@@ -57,8 +59,9 @@ const trainerdashboard = {
     }
     memberStore.setGoal(memberId,goal);
     //logger.info(member.goal);
-    response.redirect("/dashboard");
+    response.redirect("/trainerdashboard");
   }
+  */
 };
 
 
