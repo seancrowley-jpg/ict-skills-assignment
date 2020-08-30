@@ -44,9 +44,7 @@ const accounts = {
       startingweight: request.body.startingweight,
       id: uuid.v1(),
       goal:{},
-      assessments: [
-        
-      ],
+      assessments: [],
     }
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);

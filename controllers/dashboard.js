@@ -8,7 +8,7 @@ const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
+    //logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const memberStats = analytics.generateMemberStats(loggedInUser);
     const assessments = loggedInUser.assessments;
@@ -18,13 +18,13 @@ const dashboard = {
       analytics: memberStats,
       assessments: assessments
     };
-    logger.info('about to render')
+    //logger.info('about to render')
     let goal = loggedInUser.goal;
     if(assessments.length >= 1)
       {
         goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
       }
-    logger.info("Index",memberStats)
+    logger.info(memberStats)
     //logger.info(loggedInUser.goal)
     //assessments.reverse();
     response.render("dashboard", viewData);
