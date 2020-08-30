@@ -19,7 +19,8 @@ const dashboard = {
       assessments: assessments
     };
     logger.info('about to render')
-    logger.info(memberStats)
+    //logger.info(memberStats)
+    //logger.info(loggedInUser.goal)
     //assessments.reverse();
     response.render("dashboard", viewData);
   },

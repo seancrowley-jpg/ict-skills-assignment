@@ -58,7 +58,7 @@ const trainerdashboard = {
       hips: Number(request.body.hips),
     }
     memberStore.setGoal(memberId,goal);
-    //logger.info(member.goal);
+    logger.info(goal);
     response.redirect("/trainerdashboard");
   }
 };
