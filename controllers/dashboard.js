@@ -69,6 +69,7 @@ const dashboard = {
       hips: Number(request.body.hips),
       status: ""
     }
+    goal.status = memberStore.checkGoalStatus(member.id,goal,goal.date)
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);
     response.redirect("/dashboard");

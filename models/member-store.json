@@ -49,15 +49,30 @@
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "goal": {
-        "date": "August 31, 2020",
-        "weight": 80,
-        "chest": 35,
-        "thigh": 40,
-        "upperarm": 25,
-        "waist": 39,
-        "hips": 46
+        "date": "August 24, 2020",
+        "weight": 70,
+        "chest": 34,
+        "thigh": 39,
+        "upperarm": 26,
+        "waist": 38,
+        "hips": 45,
+        "status": "Open"
       },
-      "assessments": []
+      "assessments": [
+        {
+          "assessmentid": "43a24d40-eae2-11ea-9307-399fbc21654a",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "Sun Aug 30 2020"
+        }
+      ]
     }
   ]
 }

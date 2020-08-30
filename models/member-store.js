@@ -113,7 +113,7 @@ const memberStore = {
       } else if (date < now) {
         status = ("Open");
         return status;
-      } else if ((date< now) && 
+      } else if ((date < now) && 
                  (assessment.weight === goal.weight) && 
                  (assessment.chest === goal.chest) && 
                  (assessment.thigh === goal.thigh) && 
@@ -121,10 +121,9 @@ const memberStore = {
                  (assessment.waist === goal.waist) &&
                  (assessment.hips === goal.hips))
         {
-          
+          status = ("Achieved")
+          return status;
         }
-                 
-    
   },
 };
 
