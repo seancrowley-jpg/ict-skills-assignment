@@ -60,7 +60,7 @@ const dashboard = {
     const member = accounts.getCurrentUser(request);
     const today = new Date();
     let goal = {
-      date: Date('.ui.calendar').calendar('getDate'),
+      date: today.toDateString(request.body.date),
       weight: Number(request.body.weight),
       chest: Number(request.body.chest),
       thigh: Number(request.body.thigh),
