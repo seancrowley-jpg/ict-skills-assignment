@@ -7,6 +7,7 @@ const accounts = require("./controllers/accounts.js");
 const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
 const trainerdashboard = require("./controllers/trainerdashboard.js")
+const trainergoal = require("./controllers/trainergoal.js")
 const settings = require("./controllers/settings.js")
 const comment = require("./controllers/comment.js");
 
@@ -26,7 +27,7 @@ router.post("/dashboard/setgoal", dashboard.setGoal);
 router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/trainerassessment/:id", trainerdashboard.trainerAssessment);
 router.get("/trainerdashboard/deletemember/:id", trainerdashboard.deleteMember);
-router.post("/trainerdashboard/setgoal", trainerdashboard.setGoal);
+router.post("/trainergoal/setgoal", trainergoal.setGoal);
 
 router.get("/comment/:id/editcomment/:assessmentid", comment.index);
 router.post("/comment/:id/addcomment/:assessmentid", comment.updateComment);
