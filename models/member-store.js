@@ -101,19 +101,17 @@ const memberStore = {
   {
     const member = this.getMember(id);
     const assessment = member.assessments[0];
-    const today = new Date();
-    const now = today.toLocaleDateString();
     member.goal = goal;
     let status = "";
     goal.status = status;
-    if(date > now)
+    if(date < member.assessments[0].date)
       {
         status = ("Missed");
         return status;
-      } else if (date < now) {
+      } else if (date > member.assessments[0].date) {
         status = ("Open");
         return status;
-      } else if ((date < now) && 
+      } else if ((date < member.assessments[0].date) && 
                  (assessment.weight === goal.weight) && 
                  (assessment.chest === goal.chest) && 
                  (assessment.thigh === goal.thigh) && 
@@ -122,6 +120,9 @@ const memberStore = {
                  (assessment.hips === goal.hips))
         {
           status = ("Achieved")
+          return status;
+        } else if (member.assessments.lenght = 0){
+          status = ("No Assessments")
           return status;
         }
     logger.info(date)

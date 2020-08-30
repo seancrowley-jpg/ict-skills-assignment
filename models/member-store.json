@@ -55,27 +55,13 @@
         "thigh": 0,
         "upperarm": 0,
         "waist": 0,
-        "hips": 0,
-        "status": "Open"
+        "hips": 0
       },
       "assessments": [
         {
-          "assessmentid": "3b2cb020-eaeb-11ea-bc06-f136d0768a58",
+          "assessmentid": "e4684990-eaed-11ea-870a-ef2ab2f4701f",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 0,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "trend": true,
-          "comment": "",
-          "date": "8/30/2020"
-        },
-        {
-          "assessmentid": "2f375130-eaeb-11ea-bc06-f136d0768a58",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 50,
+          "weight": 100,
           "chest": 0,
           "thigh": 0,
           "upperarm": 0,
