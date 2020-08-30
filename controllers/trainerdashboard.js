@@ -30,7 +30,8 @@ const trainerdashboard = {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
     const assessmentId = request.params.assessmentid;
-    const assessments = member.assessments
+    const assessments = member.assessments;
+    let goal = member.goal;
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
@@ -39,7 +40,6 @@ const trainerdashboard = {
       analytics: memberStats
     }
     logger.info("about to render")
-    
     goal.status = memberStore.checkGoalStatus(member.id,goal)
     logger.info(assessments);
     response.render("trainerassessment", viewData)

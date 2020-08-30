@@ -20,7 +20,10 @@ const dashboard = {
     };
     logger.info('about to render')
     let goal = loggedInUser.goal;
-    goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
+    if(assessments.length >= 1)
+      {
+        goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
+      }
     //logger.info(memberStats)
     logger.info(loggedInUser.goal)
     //assessments.reverse();
