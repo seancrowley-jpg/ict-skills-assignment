@@ -24,8 +24,8 @@ const dashboard = {
       {
         goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
       }
-    //logger.info(memberStats)
-    logger.info(loggedInUser.goal)
+    logger.info("Index",memberStats)
+    //logger.info(loggedInUser.goal)
     //assessments.reverse();
     response.render("dashboard", viewData);
   },
@@ -49,8 +49,8 @@ const dashboard = {
     };
     //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
-    //logger.info(memberStore.trend);
-    logger.info(newAssessment)
+    logger.info(memberStats);
+    //logger.info(newAssessment)
     response.redirect("/dashboard");
   },
   
@@ -76,7 +76,7 @@ const dashboard = {
     }
     //goal.status = memberStore.checkGoalStatus(member.id,goal);
     memberStore.setGoal(member.id,goal);
-    logger.info(member.goal);
+    //logger.info(member.goal);
     response.redirect("/dashboard");
   }
 };
