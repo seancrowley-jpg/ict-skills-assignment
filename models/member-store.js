@@ -97,11 +97,11 @@ const memberStore = {
     this.store.save();
   },
   
-  checkGoalStatus(id,goal,date)
+  checkGoalStatus(id,goal)
   {
     const member = this.getMember(id);
-    member.goal = goal;
     let status = "";
+    let date = goal.date
     goal.status = status;
     if(date < member.assessments[0].date)
       {
@@ -110,13 +110,14 @@ const memberStore = {
       } else if (date >= member.assessments[0].date) {
         status = ("Open");
         return status;
-      } else if ((date > member.assessments[0].date) && 
-                 (member.assessments[0].weight == goal.weight) && 
+      } else if ((date >= member.assessments[0].date) && 
+                 (member.assessments[0].weight == goal.weight))/* && 
                  (member.assessments[0].chest == goal.chest) && 
                  (member.assessments[0].thigh == goal.thigh) && 
                  (member.assessments[0].upperarm == goal.upperarm) &&
                  (member.assessments[0].waist == goal.waist) &&
                  (member.assessments[0].hips == goal.hips))
+                 */
         {
           status = ("Achieved")
           return status;
