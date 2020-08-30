@@ -45,7 +45,6 @@ const trainerdashboard = {
   
   setGoal(request, response) {
     const memberId = request.params.id;
-    //const member = memberStore.getMember(memberId);
     const today = new Date();
     let goal = {
       date: today.toDateString(request.body.date),
