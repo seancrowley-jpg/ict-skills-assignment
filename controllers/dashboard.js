@@ -58,7 +58,7 @@ const dashboard = {
   
   setGoal(request, response) {
     const member = accounts.getCurrentUser(request);
-    const today = new Date();
+    //const today = new Date();
     let goal = {
       date: request.body.date,
       weight: Number(request.body.weight),
@@ -67,6 +67,7 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
+      status: ""
     }
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);

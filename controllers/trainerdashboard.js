@@ -47,15 +47,16 @@ const trainerdashboard = {
   setGoal(request, response) {
     logger.info("Setting Goal");
     const memberId = request.params.id;
-    const today = new Date();
+    //const today = new Date();
     let goal = {
-      date: today.toDateString(request.body.date),
+      date: request.body.date,
       weight: Number(request.body.weight),
       chest: Number(request.body.chest),
       thigh: Number(request.body.thigh),
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
+      status: ""
     }
     memberStore.setGoal(memberId,goal);
     logger.info(goal);
