@@ -27,7 +27,8 @@ router.post("/dashboard/setgoal", dashboard.setGoal);
 router.get("/trainerdashboard", trainerdashboard.index);
 router.get("/trainerassessment/:id", trainerdashboard.trainerAssessment);
 router.get("/trainerdashboard/deletemember/:id", trainerdashboard.deleteMember);
-router.post("/trainergoal/setgoal", trainergoal.setGoal);
+router.get("/trainergoal", trainergoal.index);
+router.post("/trainergoal/setgoal/:id", trainergoal.setGoal);
 
 router.get("/comment/:id/editcomment/:assessmentid", comment.index);
 router.post("/comment/:id/addcomment/:assessmentid", comment.updateComment);

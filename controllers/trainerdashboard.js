@@ -43,7 +43,7 @@ const trainerdashboard = {
     response.render("trainerassessment", viewData)
   },
   
-  /*
+  
   setGoal(request, response) {
     logger.info("Setting Goal");
     const memberId = request.params.id;
@@ -61,7 +61,6 @@ const trainerdashboard = {
     //logger.info(member.goal);
     response.redirect("/trainerdashboard");
   }
-  */
 };
 
 
