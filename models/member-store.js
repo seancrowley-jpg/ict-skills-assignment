@@ -100,7 +100,6 @@ const memberStore = {
   checkGoalStatus(id,goal,date)
   {
     const member = this.getMember(id);
-    const assessment = member.assessments[0];
     member.goal = goal;
     let status = "";
     goal.status = status;
@@ -108,16 +107,16 @@ const memberStore = {
       {
         status = ("Missed");
         return status;
-      } else if (date > member.assessments[0].date) {
+      } else if (date >= member.assessments[0].date) {
         status = ("Open");
         return status;
-      } else if ((date < member.assessments[0].date) && 
-                 (assessment.weight === goal.weight) && 
-                 (assessment.chest === goal.chest) && 
-                 (assessment.thigh === goal.thigh) && 
-                 (assessment.upperarm === goal.upperarm) &&
-                 (assessment.waist === goal.waist) &&
-                 (assessment.hips === goal.hips))
+      } else if ((date > member.assessments[0].date) && 
+                 (member.assessments[0].weight == goal.weight) && 
+                 (member.assessments[0].chest == goal.chest) && 
+                 (member.assessments[0].thigh == goal.thigh) && 
+                 (member.assessments[0].upperarm == goal.upperarm) &&
+                 (member.assessments[0].waist == goal.waist) &&
+                 (member.assessments[0].hips == goal.hips))
         {
           status = ("Achieved")
           return status;
