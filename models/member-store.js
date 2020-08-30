@@ -97,15 +97,24 @@ const memberStore = {
     this.store.save();
   },
   
-  checkGoalStatus(id,goal)
+  checkGoalStatus(id,goal,date)
   {
     const member = this.getMember(id);
     const today = new Date();
+    const now = today.toDateString();
     member.goal = goal;
     let status = "";
     goal.status = status;
+    if(date > now)
+      {
+        status = ("Missed");
+        return status;
+      } else if (date < now) {
+        status = ("Open");
+        return status;
+      } else if ()
     
-  }
+  },
 };
 
 
