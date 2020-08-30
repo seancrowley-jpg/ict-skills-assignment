@@ -17,7 +17,7 @@
         "upperarm": 0,
         "waist": 0,
         "hips": 0,
-        "status": ""
+        "status": "Open"
       },
       "assessments": [
         {
@@ -30,7 +30,7 @@
           "waist": 0,
           "hips": 0,
           "trend": true,
-          "comment": "",
+          "comment": "  comment\r\n",
           "date": "8/30/2020"
         },
         {
