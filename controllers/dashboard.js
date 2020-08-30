@@ -40,12 +40,12 @@ const dashboard = {
       hips: Number(request.body.hips),
       trend: memberStats.trend,
       comment: "",
-      date: today.toDateString()
+      date: today.toLocaleDateString()
     };
     //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
     //logger.info(memberStore.trend);
-    //logger.info(newAssessment)
+    logger.info(newAssessment)
     response.redirect("/dashboard");
   },
   
