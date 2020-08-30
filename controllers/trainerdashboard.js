@@ -46,7 +46,7 @@ const trainerdashboard = {
   
   setGoal(request, response) {
     logger.info("Setting Goal");
-    const memberId = request.params.id;
+    const memberId = request.params.userid;
     const today = new Date();
     let goal = {
       date: today.toDateString(request.body.date),
