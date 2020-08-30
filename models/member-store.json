@@ -57,21 +57,7 @@
         "waist": 40,
         "hips": 45
       },
-      "assessments": [
-        {
-          "assessmentid": "fbfeae50-ea1b-11ea-9d3f-6d06abc2fe8c",
-          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
-          "weight": 0,
-          "chest": 0,
-          "thigh": 0,
-          "upperarm": 0,
-          "waist": 0,
-          "hips": 0,
-          "trend": true,
-          "comment": "",
-          "date": "Sat Aug 29 2020"
-        }
-      ]
+      "assessments": []
     }
   ]
 }
