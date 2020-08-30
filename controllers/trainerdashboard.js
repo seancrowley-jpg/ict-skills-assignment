@@ -61,7 +61,7 @@ const trainerdashboard = {
     goal.status = memberStore.checkGoalStatus(member.id,goal)
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);
-    response.redirect("/trainerassessment/:id");
+    response.redirect("/trainerassessment/" + memberId);
   }
 };
 
