@@ -19,8 +19,8 @@ const dashboard = {
       assessments: assessments
     };
     logger.info('about to render')
-    logger.info(memberStats)
-    //logger.info(loggedInUser.goal)
+    //logger.info(memberStats)
+    logger.info(loggedInUser.goal)
     //assessments.reverse();
     response.render("dashboard", viewData);
   },
@@ -38,7 +38,7 @@ const dashboard = {
       upperarm: Number(request.body.upperarm),
       waist: Number(request.body.waist),
       hips: Number(request.body.hips),
-      trend: analytics.trend,
+      trend: memberStats.trend,
       comment: "",
       date: today.toDateString()
     };
