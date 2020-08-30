@@ -95,6 +95,16 @@ const memberStore = {
     const member = this.getMember(id);
     member.goal = goal;
     this.store.save();
+  },
+  
+  checkGoalStatus(id,goal)
+  {
+    const member = this.getMember(id);
+    const today = new Date();
+    member.goal = goal;
+    let status = "";
+    goal.status = status;
+    
   }
 };
 
