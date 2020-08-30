@@ -62,6 +62,7 @@ const accounts = {
       response.redirect('/dashboard');
     } 
     else if(trainer && tPassword) {
+      trainer.members = memberstore.getAllMembers();
       response.redirect('/trainerdashboard');
     }
     else {

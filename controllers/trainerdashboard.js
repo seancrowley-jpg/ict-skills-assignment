@@ -12,7 +12,7 @@ const trainerdashboard = {
     const members = memberStore.getAllMembers();
     const assessmentId = request.params.assessmentid;
     const viewData = {
-      member: members,
+      members: members,
     };
     logger.info("about to render");
     response.render("trainerdashboard", viewData)
@@ -46,7 +46,7 @@ const trainerdashboard = {
   
   setGoal(request, response) {
     logger.info("Setting Goal");
-    const memberId = request.params.userid;
+    const memberId = request.params.id;
     const today = new Date();
     let goal = {
       date: today.toDateString(request.body.date),
