@@ -100,6 +100,7 @@ const memberStore = {
   checkGoalStatus(id,goal,date)
   {
     const member = this.getMember(id);
+    const assessment = member.assessments[0];
     const today = new Date();
     const now = today.toDateString();
     member.goal = goal;
@@ -112,7 +113,17 @@ const memberStore = {
       } else if (date < now) {
         status = ("Open");
         return status;
-      } else if ()
+      } else if ((date< now) && 
+                 (assessment.weight === goal.weight) && 
+                 (assessment.chest === goal.chest) && 
+                 (assessment.thigh === goal.thigh) && 
+                 (assessment.upperarm === goal.upperarm) &&
+                 (assessment.waist === goal.waist) &&
+                 (assessment.hips === goal.hips))
+        {
+          
+        }
+                 
     
   },
 };
