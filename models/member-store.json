@@ -49,20 +49,32 @@
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
       "goal": {
-        "date": "8/31/2020",
-        "weight": 0,
+        "date": "9/2/2020",
+        "weight": 80,
         "chest": 0,
         "thigh": 0,
         "upperarm": 0,
         "waist": 0,
-        "hips": 0,
-        "status": "Open"
+        "hips": 0
       },
       "assessments": [
         {
-          "assessmentid": "ca9df970-eaf1-11ea-8d16-b93e3a2175ad",
+          "assessmentid": "978a3710-eafb-11ea-906d-35df61e199ea",
           "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
           "weight": 80,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "8/30/2020"
+        },
+        {
+          "assessmentid": "8937ae40-eafb-11ea-906d-35df61e199ea",
+          "userid": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+          "weight": 99,
           "chest": 0,
           "thigh": 0,
           "upperarm": 0,
