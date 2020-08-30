@@ -2,10 +2,10 @@
   <div class="four fields">
     <div class ="field">
       <label>Date</label>
-      <div class="ui calendar" id="custom_format_calendar">
+      <div class="ui calendar" id="date_calendar">
         <div class="ui input left icon">
           <i class="calendar icon"></i>
-          <input type="text" placeholder="Date">
+          <input placeholder="Date" type="text" name="date">
         </div>
       </div>
     </div>
@@ -39,9 +39,9 @@
   <button class="ui blue submit button"> Set Goal </button>
 </form>
 
-$('#custom_format_calendar')
+<script>
+$('#date_calendar')
   .calendar({
-    monthFirst: false,
     type: 'date',
     formatter: {
       date: function (date, settings) {
@@ -51,6 +51,6 @@ $('#custom_format_calendar')
         var year = date.getFullYear();
         return day + '/' + month + '/' + year;
       }
-    }
   })
 ;
+</script>
