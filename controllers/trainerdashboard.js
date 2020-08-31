@@ -40,7 +40,11 @@ const trainerdashboard = {
       analytics: memberStats
     }
     logger.info("about to render")
-    goal.status = memberStore.checkGoalStatus(member.id,goal)
+    if(assessments.length >= 1)
+      {
+        goal.status = memberStore.checkGoalStatus(member.id,goal);
+        assessments[0].trend = memberStats.trend;
+      }
     logger.info(assessments);
     response.render("trainerassessment", viewData)
   },

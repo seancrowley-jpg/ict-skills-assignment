@@ -23,6 +23,7 @@ const dashboard = {
     if(assessments.length >= 1)
       {
         goal.status = memberStore.checkGoalStatus(loggedInUser.id,goal);
+        assessments[0].trend = memberStats.trend;
       }
     logger.info(memberStats)
     //logger.info(loggedInUser.goal)
