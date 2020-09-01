@@ -53,7 +53,6 @@ const trainerdashboard = {
   setGoal(request, response) {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
-    //const today = new Date();
     let goal = {
       date: request.body.date,
       weight: Number(request.body.weight),
@@ -64,7 +63,6 @@ const trainerdashboard = {
       hips: Number(request.body.hips),
       status: ""
     }
-    //goal.status = memberStore.checkGoalStatus(member.id,goal)
     memberStore.setGoal(member.id,goal);
     logger.info(member.goal);
     response.redirect("/trainerassessment/" + memberId);

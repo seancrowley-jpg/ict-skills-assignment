@@ -80,16 +80,6 @@ const memberStore = {
     logger.info("Comment =",comment)
     this.store.save()
   },
-  /*
-  trend(member)
-  {
-    let trend = true;
-    if (member.assessments.length >1) {
-      trend = member.assessments[1].weight > member.assessments[0].weight;
-    }
-    return trend;
-  }
-  */
   
   setGoal(id,goal){
     const member = this.getMember(id);

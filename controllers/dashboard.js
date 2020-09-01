@@ -8,7 +8,7 @@ const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
-    //logger.info("dashboard rendering");
+    logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const memberStats = analytics.generateMemberStats(loggedInUser);
     const assessments = loggedInUser.assessments;
@@ -18,7 +18,6 @@ const dashboard = {
       analytics: memberStats,
       assessments: assessments
     };
-    //logger.info('about to render')
     let goal = loggedInUser.goal;
     if(assessments.length >= 1)
       {
@@ -26,8 +25,6 @@ const dashboard = {
         assessments[0].trend = memberStats.trend;
       }
     logger.info(memberStats)
-    //logger.info(loggedInUser.goal)
-    //assessments.reverse();
     response.render("dashboard", viewData);
   },
   
@@ -48,10 +45,7 @@ const dashboard = {
       comment: "",
       date: today.toLocaleDateString()
     };
-    //newAssessment.trend = memberStore.trend(loggedInUser)
     memberStore.addAssessment(loggedInUser.id,newAssessment);
-    logger.info(memberStats);
-    //logger.info(newAssessment)
     response.redirect("/dashboard");
   },
   
@@ -64,7 +58,6 @@ const dashboard = {
   
   setGoal(request, response) {
     const member = accounts.getCurrentUser(request);
-    //const today = new Date();
     let goal = {
       date: request.body.date,
       weight: Number(request.body.weight),
@@ -75,9 +68,7 @@ const dashboard = {
       hips: Number(request.body.hips),
       status: "",
     }
-    //goal.status = memberStore.checkGoalStatus(member.id,goal);
     memberStore.setGoal(member.id,goal);
-    //logger.info(member.goal);
     response.redirect("/dashboard");
   }
 };
