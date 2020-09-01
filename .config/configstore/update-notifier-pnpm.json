@@ -1,10 +1,51 @@
 {
 	"optOut": false,
+<<<<<<< HEAD
 	"lastUpdateCheck": 1598960888548,
 	"update": {
 		"latest": "5.5.5",
+=======
+<<<<<<< HEAD
+	"lastUpdateCheck": 1598543845227,
+	"update": {
+		"latest": "5.5.3",
+=======
+<<<<<<< HEAD
+	"lastUpdateCheck": 1597838984263
+=======
+<<<<<<< HEAD
+	"lastUpdateCheck": 1597838984263,
+	"update": {
+		"latest": "5.5.2",
+=======
+<<<<<<< HEAD
+	"lastUpdateCheck": 1597167507701
+=======
+<<<<<<< HEAD
+	"lastUpdateCheck": 1597152384428,
+	"update": {
+		"latest": "5.5.1",
+=======
+	"lastUpdateCheck": 1596886814575,
+	"update": {
+		"latest": "5.4.12",
+>>>>>>> 6e2aadf290d1ae9b37bd0b50fba3196fab7d9299
+>>>>>>> accbc7bcaf216de936b09fedea21675ca185ea9a
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
 		"current": "2.25.5",
 		"type": "major",
 		"name": "pnpm"
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9e628b977f0ecc84d7fcede57d775626c3ab1d50
+>>>>>>> accbc7bcaf216de936b09fedea21675ca185ea9a
+>>>>>>> bb5ffe3cd9566a44b1b8e92a8eab3e25f778cc81
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
 }

@@ -81,6 +81,7 @@ const memberStore = {
     this.store.save()
   },
   
+<<<<<<< HEAD
   setGoal(id,goal){
     const member = this.getMember(id);
     member.goal = goal;
@@ -113,6 +114,9 @@ const memberStore = {
       }
     logger.info(date)
   },
+=======
+
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
 };
 
 

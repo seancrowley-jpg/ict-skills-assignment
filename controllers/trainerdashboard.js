@@ -29,14 +29,24 @@ const trainerdashboard = {
     logger.info("Rendering members assessments");
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+<<<<<<< HEAD
     const assessmentId = request.params.assessmentid;
+<<<<<<< HEAD
     const assessments = member.assessments;
     let goal = member.goal;
+=======
+    const assessments = member.assessments
+=======
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
     var memberStats = analytics.generateMemberStats(member);
     const viewData = {
       title: "Trainer Dashboard",
       member: member,
+<<<<<<< HEAD
       assessments: assessments,
+=======
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
       analytics: memberStats
     }
     logger.info("about to render")

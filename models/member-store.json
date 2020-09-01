@@ -3,7 +3,12 @@
     {
       "email": "marge@simpson.com",
       "password": "secret",
+<<<<<<< HEAD
       "name": "Marge Simpson",
+=======
+<<<<<<< HEAD
+      "name": "Marge",
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
       "address": "Evergreen Terrace",
       "gender": "F",
       "height": "1.5",
@@ -43,8 +48,13 @@
           "waist": 0,
           "hips": 0,
           "trend": true,
+<<<<<<< HEAD
           "comment": "",
           "date": "8/30/2020"
+=======
+          "comment": "  testinggggggggggggggggggggggggggggggggggg\r\n",
+          "date": "Thu, 27 Aug 2020 14:22:13 GMT"
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
         }
       ]
     },
@@ -57,6 +67,7 @@
       "height": "2.0",
       "startingweight": "101",
       "id": "39df6220-e2f4-11ea-b0c2-d1dd17424f5b",
+<<<<<<< HEAD
       "goal": {
         "date": "9/3/2020",
         "weight": 80,
@@ -67,6 +78,9 @@
         "hips": 55,
         "status": "Open"
       },
+=======
+<<<<<<< HEAD
+>>>>>>> c9caa101a07ad725b37c6b52ed949523521df4eb
       "assessments": [
         {
           "assessmentid": "36abf7c0-ec50-11ea-a88a-8b12eec70db9",
@@ -169,6 +183,17 @@
           "date": "9/1/2020"
         }
       ]
+=======
+=======
+      "name": "Homer Simpson",
+      "address": "Evergreen Terrace",
+      "gender": "M",
+      "height": "1.7",
+      "staringweight": "101",
+      "id": "3679a3f0-e21a-11ea-b0cb-0707c5d281d3",
+>>>>>>> bb5ffe3cd9566a44b1b8e92a8eab3e25f778cc81
+      "assessments": []
+>>>>>>> f2a6fade306a7311f91331912e24e0705d165c0e
     }
   ]
 }
