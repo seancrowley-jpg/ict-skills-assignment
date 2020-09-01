@@ -103,6 +103,41 @@
           "date": "9/1/2020"
         }
       ]
+    },
+    {
+      "email": "joe@joe.com",
+      "password": "secret",
+      "name": "Joe .S",
+      "address": "joe",
+      "gender": "M",
+      "height": "2",
+      "startingweight": "80",
+      "id": "7df4d3f0-ec4f-11ea-85fa-81e9ec4674dd",
+      "goal": {
+        "date": "9/3/2020",
+        "weight": 93,
+        "chest": 0,
+        "thigh": 0,
+        "upperarm": 0,
+        "waist": 0,
+        "hips": 0,
+        "status": "Achieved"
+      },
+      "assessments": [
+        {
+          "assessmentid": "9717eac0-ec4f-11ea-85fa-81e9ec4674dd",
+          "userid": "7df4d3f0-ec4f-11ea-85fa-81e9ec4674dd",
+          "weight": 93,
+          "chest": 0,
+          "thigh": 0,
+          "upperarm": 0,
+          "waist": 0,
+          "hips": 0,
+          "trend": true,
+          "comment": "",
+          "date": "9/1/2020"
+        }
+      ]
     }
   ]
 }
